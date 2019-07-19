@@ -1,0 +1,59 @@
+{
+  "name": "meizi",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "new:comp": "node ./scripts/generateComponent/index",
+    "new:view": "node ./scripts/generateView/index"
+  },
+  "dependencies": {
+    "core-js": "^2.6.5",
+    "dayjs": "^1.8.14",
+    "element-ui": "^2.8.2",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
+    "lodash": "^4.17.11",
+    "meizi-ui": "^0.1.1",
+    "nprogress": "^0.2.0",
+    "three": "^0.104.0",
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.3",
+    "vuex": "^3.1.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.7.0",
+    "@vue/cli-plugin-eslint": "^3.7.0",
+    "@vue/cli-service": "^3.7.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "html-loader": "^0.5.5",
+    "sass": "^1.20.1",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
