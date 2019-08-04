@@ -4,7 +4,6 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 export default new Router({
-  mode:"hash",
   routes: [
     {
       path: '/',
@@ -24,7 +23,17 @@ export default new Router({
     {
       path: '/blog',
       name: 'blog',
-      component: () => import(/* webpackChunkName: "blog" */ './views/Blog.vue')
+      component: () => import(/* webpackChunkName: "blog" */ './views/Blog.vue'),
+      // 需要在父页面用 router-view给子路由占位
+      children: [{
+        path: 'youth',
+        name: 'youth',
+        component: () => import(/* webpackChunkName: "youth" */ './views/article/youth.vue'),
+        meta: {
+          title: '故乡遥',
+          hidden: false
+        }
+      }, ]
     },
     {
       path: '/about',

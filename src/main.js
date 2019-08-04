@@ -1,6 +1,6 @@
 import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
+
+
 import store from './store'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
@@ -8,6 +8,10 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import test from 'meizi-ui'
 import 'font-awesome/css/font-awesome.css'
+
+//移动了位置
+import App from './App.vue'
+import router from './router'
 
 
 import $ from 'jquery'

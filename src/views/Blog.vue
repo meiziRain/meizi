@@ -1,5 +1,6 @@
 <template>
   <div id="blog">
+    <router-view></router-view>
     <!-- COIDEA:header START -->
 
     <!-- COIDEA:header END -->
@@ -26,11 +27,11 @@
               <div class="location">Photo by: Ryan Tang</div>
               <div class="headline">
                 故乡遥
-                <br/>
+                <br />
               </div>
-              <a href="#0">
+              <router-link :to="{ path: '/blog/youth'}">
                 <div class="link">Read the Story</div>
-              </a>
+              </router-link>
             </div>
           </div>
         </div>
@@ -43,9 +44,7 @@
                 Photo by
                 <br />Ryan Tang
               </div>
-              <a href="#0">
-                <div class="link">Read the Story</div>
-              </a>
+              <div class="link">Read the Story</div>
             </div>
           </div>
         </div>
@@ -58,9 +57,7 @@
                 Photo by
                 <br />Benjamin Hung
               </div>
-              <a href="#0">
-                <div class="link">Read the Story</div>
-              </a>
+              <div class="link">Read the Story</div>
             </div>
           </div>
         </div>
@@ -73,9 +70,7 @@
                 Photo by
                 <br />Matteo Modica
               </div>
-              <a href="#0">
-                <div class="link">Read the Story</div>
-              </a>
+              <div class="link">Read the Story</div>
             </div>
           </div>
         </div>
@@ -88,9 +83,7 @@
                 Photo by
                 <br />Steven Roe
               </div>
-              <a href="#0">
-                <div class="link">Read the Story</div>
-              </a>
+              <div class="link">Read the Story</div>
             </div>
           </div>
         </div>
@@ -103,9 +96,7 @@
                 Photo by
                 <br />Sean Foley
               </div>
-              <a href="#0">
-                <div class="link">Read the Story</div>
-              </a>
+              <div class="link">Read the Story</div>
             </div>
           </div>
         </div>
@@ -138,6 +129,11 @@ export default {
   },
   beforeDestroy() {},
   methods: {
+    goYouth() {
+      this.$router.push({
+        name: "youth"
+      });
+    },
     slickApply() {
       $(function() {
         $(".slider-for").slick({

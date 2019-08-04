@@ -47,33 +47,16 @@ export default {
       ]
     };
   },
-  created() {},
+  created() {
+    this.keepNavRender = this.keepNavRender.bind(this); 
+  },
   mounted() {
     let me = this;
     me.setMenuStyle();
   },
   watch: {
     $route(to, from) {
-      console.log(this.$route.path);
-      switch (this.$route.path.substring(1)) {
-        case "home":
-          this.currentindex = 0;
-          break;
-        case "blog":
-          this.currentindex = 1;
-          break;
-        case "studio":
-          this.currentindex = 2;
-          break;
-        case "daily":
-          this.currentindex = 3;
-          break;
-        case "about":
-          this.currentindex = 4;
-          break;
-        default:
-          console.log("none");
-      }
+      this.keepNavRender();
     }
   },
   methods: {
@@ -83,9 +66,37 @@ export default {
     setMenuStyle: function() {
       let me = this;
       let menu = document.getElementById("menu");
-      let current = _.random(me.menu.length-1);
-      console.log(me.menu.length-1)
+      let current = _.random(me.menu.length - 1);
+      console.log(me.menu.length - 1);
       menu.className = "menu menu--" + me.menu[current];
+    },
+
+
+    keepNavRender(){
+      let me =this;
+      console.log(me.$route.path);
+      switch (me.$route.path.substring(1)) {
+        case "home":
+          me.currentindex = 0;
+          break;
+        case "blog":
+          me.currentindex = 1;
+          break;
+        case "studio":
+          me.currentindex = 2;
+          break;
+        case "daily":
+          me.currentindex = 3;
+          break;
+        case "about":
+          me.currentindex = 4;
+          break;
+        case "blog/youth":
+          me.currentindex = 1;
+          break;
+        default:
+          console.log("no matching");
+      }
     },
 
     toHome: function() {
@@ -149,7 +160,7 @@ export default {
 
 .menu__item {
   display: block;
-  margin:0;
+  margin: 0;
 }
 
 .menu__link {
@@ -247,7 +258,6 @@ export default {
 .menu--prospero .menu__link:focus {
   /* color: #929292; */
   color: #d94f5c;
-       
 }
 
 .menu--prospero .menu__item--current .menu__link {
@@ -290,7 +300,7 @@ export default {
   color: #929292;
   -webkit-transition: color 0.4s;
   transition: color 0.4s;
-  width:5rem;
+  width: 4rem;
 }
 
 .menu--viola .menu__link:hover,
@@ -376,7 +386,7 @@ export default {
 .menu--antonio .menu__link {
   position: relative;
   display: block;
-  min-width: 5rem;
+  min-width: 4rem;
   text-align: center;
   color: #b5b5b5;
   -webkit-transition: color 0.2s;
@@ -387,7 +397,6 @@ export default {
 .menu--antonio .menu__link:focus {
   /* color: #929292; */
   color: #d94f5c;
-       
 }
 
 .menu--antonio .menu__item--current .menu__link {
@@ -485,7 +494,7 @@ export default {
 .menu--miranda .menu__link {
   position: relative;
   display: block;
-  min-width: 5rem;
+  min-width: 4rem;
   text-align: center;
   color: #b5b5b5;
   -webkit-transition: color 0.3s;
@@ -496,7 +505,6 @@ export default {
 .menu--miranda .menu__link:focus {
   /* color: #929292; */
   color: #d94f5c;
-       
 }
 
 .menu--miranda .menu__item--current .menu__link {
@@ -636,7 +644,6 @@ export default {
 .menu--ariel .menu__link:focus {
   /* color: #929292; */
   color: #d94f5c;
-       
 }
 
 .menu--ariel .menu__item--current .menu__link {
@@ -721,7 +728,6 @@ export default {
 .menu--caliban .menu__link:focus {
   /* color: #929292; */
   color: #d94f5c;
-       
 }
 
 .menu--caliban .menu__item--current .menu__link {
@@ -781,7 +787,6 @@ export default {
 .menu--ferdinand .menu__link:focus {
   /* color: #929292; */
   color: #d94f5c;
-       
 }
 
 .menu--ferdinand .menu__item--current .menu__link {
@@ -831,7 +836,6 @@ export default {
 .menu--francisco .menu__link:focus {
   /* color: #929292; */
   color: #d94f5c;
-       
 }
 
 .menu--francisco .menu__item--current .menu__link {
@@ -931,7 +935,6 @@ export default {
 .menu--trinculo .menu__link:focus {
   /* color: #929292; */
   color: #d94f5c;
-       
 }
 
 .menu--trinculo .menu__link::before {
@@ -1039,7 +1042,7 @@ export default {
 
 .menu--stephano .menu__link {
   position: relative;
-  min-width: 5rem;
+  min-width: 4rem;
   text-align: center;
   color: #b5b5b5;
   -webkit-transition: color 0.3s;
@@ -1050,7 +1053,6 @@ export default {
 .menu--stephano .menu__link:focus {
   /* color: #929292; */
   color: #d94f5c;
-       
 }
 
 .menu--stephano .menu__item--current .menu__link {
@@ -1142,7 +1144,6 @@ export default {
 .menu--iris .menu__link:focus {
   /* color: #929292; */
   color: #d94f5c;
-       
 }
 
 .menu--iris .menu__item--current .menu__link {
@@ -1206,7 +1207,6 @@ export default {
 .menu--ceres .menu__link:focus {
   /* color: #929292; */
   color: #d94f5c;
-       
 }
 
 .menu--ceres .menu__item--current .menu__link {
@@ -1277,13 +1277,12 @@ export default {
   position: relative;
   overflow: hidden;
   margin: 0.5em;
-  
 }
 
 .menu--juno .menu__link {
   position: relative;
   z-index: 10;
-  width:5rem;
+  width: 4rem;
   text-align: center;
   color: #b5b5b5;
   -webkit-transition: color 0.3s;
@@ -1294,7 +1293,6 @@ export default {
 .menu--juno .menu__link:focus {
   /* color: #929292; */
   color: #d94f5c;
-       
 }
 
 .menu--juno .menu__item--current .menu__link {
@@ -1414,7 +1412,6 @@ export default {
 .menu--maria .menu__link:focus {
   /* color: #929292; */
   color: #d94f5c;
-       
 }
 
 .menu--maria .menu__item.menu__item--current .menu__link {
@@ -1430,7 +1427,7 @@ export default {
 .menu--valentine .menu__link {
   position: relative;
   display: block;
-  min-width: 5rem;
+  min-width: 4rem;
   text-align: center;
   color: #b5b5b5;
   -webkit-transition: color 0.3s;
@@ -1441,7 +1438,6 @@ export default {
 .menu--valentine .menu__link:focus {
   /* color: #929292; */
   color: #d94f5c;
-       
 }
 
 .menu--valentine .menu__item--current .menu__link {
@@ -1530,7 +1526,6 @@ export default {
 .menu--puck .menu__link:focus {
   /* color: #929292; */
   color: #d94f5c;
-       
 }
 
 .menu--puck .menu__item--current .menu__link {
@@ -1590,7 +1585,6 @@ export default {
 .menu--titania .menu__link:focus {
   /* color: #929292; */
   color: #d94f5c;
-       
 }
 
 .menu--titania .menu__item--current .menu__link {

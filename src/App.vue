@@ -5,20 +5,15 @@
 
     <Loading v-if="loading" id="loading"></Loading>
 
-    <div v-else id="content">
-      <div v-if="!$store.state.isMobile" id="nav">
-        <!-- <router-link :class="{selected: 1==currentindex}" to="/blog" @click.native="toBlog">Blog</router-link>
+    <div id="content">
+      <!-- <router-link :class="{selected: 1==currentindex}" to="/blog" @click.native="toBlog">Blog</router-link>
       <router-link :class="{selected: 2==currentindex}" to="/studio" @click.native="toStudio">Studio</router-link>
       <router-link :class="{selected: 3==currentindex}" to="/daily" @click.native="toDaily">Daily</router-link>
-        <router-link :class="{selected: 4==currentindex}" to="/about" @click.native="toAbout">About</router-link>-->
-
-        <Iris class="iris"></Iris>
-      </div>
+      <router-link :class="{selected: 4==currentindex}" to="/about" @click.native="toAbout">About</router-link>-->
+      <Iris v-if="!$store.state.isMobile" ref="nav" id="iris"></Iris>
+      <Neonmenu id="neonmenu" v-else></Neonmenu>
       <router-view />
       <!-- 是一个顶级的外链，它会渲染和顶级路由匹配的组件。 -->
-      <Logo id="logo" @click="goHome()" @mouseenter="mouseenter()" @mouseleave="mouseleave()"></Logo>
-      <Neonmenu id="neonmenu" v-if="$store.state.isMobile"></Neonmenu>
-
       <!--用于预加载 font-awesome的图标 -->
       <div v-show="false">
         <i class="fas fa-home fa-2x"></i>
@@ -58,8 +53,6 @@ export default {
     //dom生成前
     // 判断设备类型
 
-    console.log(this.navArray);
-
     if (this._isMobile()) {
       console.log("Mobile");
       this.$store.state.isMobile = true;
@@ -68,7 +61,7 @@ export default {
       this.$store.state.isMobile = false;
     }
 
-    this.loader = setInterval(() => {
+    this.loader = setTimeout(() => {
       this.loading = false;
     }, 2000);
   },
@@ -76,6 +69,10 @@ export default {
     clearInterval(this.loader);
   },
   mounted() {
+
+    // ref属性的使用不能放在 v-if v-else中，使用了v-if 后，将不会渲染子组件内容，导致this.$refs获取不到对应的名称
+    this.$refs.nav.keepNavRender();
+
     //dom生成后
     // Preload images
     // const preloadImages = () => {
@@ -108,31 +105,6 @@ export default {
         /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i
       );
       return flag;
-    },
-    goHome() {
-      let me = this;
-      // sessionStorage.setItem("currentindex", 0);
-      // console.log(sessionStorage.getItem("currentindex"));
-      me.currentindex = 0;
-      me.$router.push({
-        name: "home"
-      });
-    },
-
-    mouseenter() {
-      let logo = document.getElementById("logo");
-      logo.style.animation = "rotate 3s linear infinite";
-    },
-    mouseleave() {
-      let logo = document.getElementById("logo");
-      logo.style.animation = "";
-    },
-    toHome: function() {
-      let me = this;
-      me.currentindex = 0;
-      me.$router.push({
-        name: "home"
-      });
     }
   }
 };
@@ -159,15 +131,7 @@ export default {
   transform: translate(-50%, -50%);
   z-index: 1000;
 }
-#logo {
-  position: fixed;
-  left: 2rem;
-  top: 2rem;
-  width: 6rem;
-  height: 6rem;
-  cursor: pointer;
-  z-index: 999;
-}
+
 @-webkit-keyframes rotate {
   from {
     -webkit-transform: rotate(0deg);
@@ -200,13 +164,11 @@ export default {
     transform: rotate(359deg);
   }
 }
-#logo :hover {
-  transform: scale(1.3);
-}
-#nav {
+
+#iris {
   position: fixed;
   z-index: 999;
-  right: 6%;
+  right:2%;
   top: 4%;
 }
 </style>

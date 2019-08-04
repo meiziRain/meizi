@@ -27,7 +27,7 @@ export default {
 };
 </script>
 
-<style >
+<style scoped>
 .no-cssanimations .rw-words span:first-child {
   opacity: 1;
     color: #d94f5c;

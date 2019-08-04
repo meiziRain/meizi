@@ -1,13 +1,14 @@
 <template>
   <div id="home">
     <div id="bg">
-      <Dusk v-if="$store.state.current=='dusk'"></Dusk>
+      <!-- <Dusk v-if="$store.state.current=='dusk'"></Dusk>
       <Moonlight v-if="$store.state.current=='moonlight'"></Moonlight>
-      <Sun v-if="$store.state.current=='sun'"></Sun>
+      <Sun v-if="$store.state.current=='sun'"></Sun> -->
     </div>
     <div id="word">
       <Flashword></Flashword>
     </div>
+    <Logo id="logo" @mouseenter="mouseenter()" @mouseleave="mouseleave()"></Logo>
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import Flashword from "@/components/Flashword.vue";
 import Dusk from "@/components/Dusk.vue";
 import Moonlight from "@/components/Moonlight.vue";
 import Sun from "@/components/Sun.vue";
+import Logo from "@/components/Logo.vue";
 export default {
   name: "home",
   components: {
@@ -25,6 +27,7 @@ export default {
     Dusk,
     Moonlight,
     Sun,
+    Logo
   },
   data() {
     return {};
@@ -45,6 +48,16 @@ export default {
     if (timeNow().hour() >= 20 || timeNow().hour() < 4) {
       console.log("20:00 PM ~ 04:00 AM");
       this.$store.state.current = "moonlight";
+    }
+  },
+  methods: {
+    mouseenter() {
+      let logo = document.getElementById("logo");
+      logo.style.animation = "rotate 3s linear infinite";
+    },
+    mouseleave() {
+      let logo = document.getElementById("logo");
+      logo.style.animation = "";
     }
   }
 };
@@ -109,6 +122,19 @@ export default {
   100% {
     opacity: 1;
   }
+}
+
+#logo {
+  position: fixed;
+  left: 2rem;
+  top: 2rem;
+  width: 6rem;
+  height: 6rem;
+  cursor: pointer;
+  z-index: 999;
+}
+#logo :hover {
+  transform: scale(1.3);
 }
 </style>
 

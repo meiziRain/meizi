@@ -99,7 +99,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-@import url("https://fonts.googleapis.com/css?family=Montserrat:100");
 @-webkit-keyframes flicker {
   0%,
   19%,

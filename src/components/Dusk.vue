@@ -8,7 +8,7 @@ export default {
   name: "Dusk",
   mounted() {
     createLandscape({
-      palleteImage: "../assets/pallete6.png"
+      // palleteImage: "../assets/pallete6.png"
     });
 
     function createLandscape(params) {
