@@ -2,7 +2,7 @@
   <div id="flashword">
     <div class="content">
       <h2 class="content__title">M e i z i</h2>
-      <p class="content__subtitle">Say Something...</p>
+      <p class="content__subtitle">Say something...</p>
     </div>
     <div class="overlay"></div>
   </div>

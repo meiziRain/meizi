@@ -10,6 +10,7 @@
     "new:view": "node ./scripts/generateView/index"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "core-js": "^2.6.5",
     "dayjs": "^1.8.14",
     "element-ui": "^2.8.2",

@@ -1,8 +1,6 @@
 <template>
   <div id="studio">
-    <div id="content">
-      <!-- <Star></Star> -->
-    </div>
+
   </div>
 </template>
 
@@ -19,7 +17,7 @@ export default {
 
 <style scoped>
 #studio {
-  position: relative;
+  position: absolute;
   z-index: 1;
   height: 100rem;
   width:10rem;

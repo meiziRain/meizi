@@ -4,8 +4,9 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <link rel ="shortcut icon" type="image/x-icon" href="favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
     <link rel="stylesheet" type="text/css" href="assets/base.css" />
+    <link rel="stylesheet" type="text/css" href="assets/aos.css" />
     <!-- 谷歌字体 -->
     <link
       href="https://fonts.font.im/css?family=Audiowide|Iceland|Monoton|Pacifico|Press+Start+2P|Vampiro+One|Abril+Fatface|Josefin+Sans|Raleway:300,400,900|Montserrat:100"
@@ -48,6 +49,7 @@
       html {
         overflow-y: scroll;
         /* 兼容ie8，不支持:root, vw */
+        background-color: rgb(15, 14, 14);
       }
 
       /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
@@ -116,7 +118,7 @@
     <script src="assets/charming.min.js"></script>
     <script src="assets/TweenMax.min.js"></script>
     <script src="assets/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/scrollbot.js"></script>
+    <!-- <script src="assets/scrollbot.js"></script> -->
 
     <!-- cloud -->
 
@@ -382,9 +384,10 @@
       }
     </script>
   </head>
-  <body  oncontextmenu="doNothing()">
+  <body oncontextmenu="doNothing()">
     <script src="assets/mo.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>

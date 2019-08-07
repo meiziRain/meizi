@@ -30,10 +30,8 @@ export default {
 <style scoped>
 /* common */
 .ch-grid {
-  margin: 20px 0 0 0;
   padding: 0;
   list-style: none;
-  display: block;
   text-align: center;
   width: 100%;
 }
@@ -49,7 +47,6 @@ export default {
 }
 
 .ch-grid li {
-  border: 1px solid red;
   width: 8rem;
   height: 8rem;
   display: inline-block;

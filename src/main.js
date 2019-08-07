@@ -9,6 +9,9 @@ import 'element-ui/lib/theme-chalk/index.css'
 import test from 'meizi-ui'
 import 'font-awesome/css/font-awesome.css'
 
+
+
+
 //移动了位置
 import App from './App.vue'
 import router from './router'
@@ -19,7 +22,6 @@ Vue.use(test)
 
 Vue.config.productionTip = false
 Vue.use(ElementUI);
-
 
 // use lodash
 let _ = require('lodash')
