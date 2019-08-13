@@ -1,0 +1,214 @@
+<template>
+  <div id="sex">
+    <div id="project-item-1">
+      <!-- COIDEA:demo:header START -->
+      <header>
+        <nav class="navigation">
+          <li>
+            <svg
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 54 54"
+              style="enable-background:new 0 0 54 54;"
+              xml:space="preserve"
+            >
+              <circle cx="7" cy="47" r="4" />
+              <circle cx="27" cy="47" r="4" class="circle" />
+              <circle cx="47" cy="47" r="4" />
+              <circle cx="7" cy="27" r="4" class="circle" />
+              <circle cx="27" cy="27" r="4" />
+              <circle cx="47" cy="27" r="4" class="circle" />
+              <circle cx="7" cy="7" r="4" />
+              <circle cx="27" cy="7" r="4" class="circle" />
+              <circle cx="47" cy="7" r="4" />
+              <g />
+              <g />
+              <g />
+              <g />
+              <g />
+              <g />
+              <g />
+              <g />
+              <g />
+              <g />
+              <g />
+              <g />
+              <g />
+              <g />
+              <g />
+            </svg>
+          </li>
+        </nav>
+
+        <nav class="main">
+          <li>
+            <a href="http://www.htmleaf.com/jQuery/Layout-Interface/201903185568.html">article</a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/COIDEAwebsite/slideshow-with-fullscreen-detail-view"
+              target="_blank"
+            >Github</a>
+          </li>
+        </nav>
+      </header>
+      <!-- COIDEA:demo:header END -->
+
+      <!-- COIDEA:demo:slider START -->
+      <section class="coidea-slider">
+        <!-- COIDEA:animation:helpers START -->
+        <div class="slider-helpers">
+          <div class="arrea black-arrea"></div>
+          <div class="arrea white-arrea"></div>
+        </div>
+        <!-- COIDEA:animation:helpers END -->
+
+        <!-- COIDEA:slider:holder START -->
+        <div class="slider-holder">
+          <!-- COIDEA:slider START -->
+          <div class="slider">
+            <!-- COIDEA:slider:item START -->
+            <div
+              id="slider-item-1"
+              class="slider-item"
+              style="background-image: url(../assets/about/img-1.jpg);"
+              data-id="1"
+              data-headline="Renee Johnson"
+              data-description="Look and feel client-facing usability follow up. Affiliate marketing prototype look and feel ROI flesh out. Target audience lean organic tweak CTA. Reach internally affiliate marketing ecosystem mission statement lead generation implementation. Ecosystem lead generation value-add hackathon ecosystem optimize follow up onboarding."
+            ></div>
+            <!-- COIDEA:slider:item END -->
+
+            <!-- COIDEA:slider:item START -->
+            <div
+              id="slider-item-2"
+              class="slider-item"
+              style="background-image: url(../assets/about/img-2.jpg);"
+              data-id="2"
+              data-headline="Logan Boyd"
+              data-description="Conversion mission statement client-facing transparent post launch in the queue hackathon. Credentials OLA ETA follow up innovation mobile-first scope out mission statement credentials. B2B push the envelope plow through take a stab at it segment. Game changer proximity regroup value proposition mobile-first reach proximity."
+            ></div>
+            <!-- COIDEA:slider:item END -->
+
+            <!-- COIDEA:slider:item START -->
+            <div
+              id="slider-item-3"
+              class="slider-item"
+              style="background-image: url(../assets/about/img-3.jpg);"
+              data-id="3"
+              data-headline="Leona Day"
+              data-description="Good fit ramp up usability transparent prototype traction heads down fluid innovation. Good fit value creation flesh out discovery transparent CTA tweak . OLA deliverables scope out proposed usability game changer pipeline ramp up. Credentials mission statement reach discovery flesh out usability internally ROI. Fluid mock up user persona value creation."
+            ></div>
+            <!-- COIDEA:slider:item END -->
+
+            <!-- COIDEA:slider:item START -->
+            <div
+              id="slider-item-4"
+              class="slider-item"
+              style="background-image: url(../assets/about/img-4.jpg);"
+              data-id="4"
+              data-headline="Linda Young"
+              data-description="SEO retainer optimize tweak. Discovery third party game plan strategic partners scope out API post launch tackle it. Deliverables hackathon functionality strategic partners copy deck fluid. Value-add third party next level whiteboard scope out kick-off hackathon look and feel."
+            ></div>
+            <!-- COIDEA:slider:item END -->
+
+            <!-- COIDEA:slider:item START -->
+            <div
+              id="slider-item-5"
+              class="slider-item"
+              style="background-image: url(../assets/about/img-5.jpg);"
+              data-id="5"
+              data-headline="Katrina Steward"
+              data-description="Ramp up lean target audience dynamic look and feel innovation kick-off implementation retainer. Optimize heads down onboarding segment. Retainer good fit tweak affiliate marketing value proposition. Ecosystem organic cross platform regroup ramp up scope out ETA dev environment. Plow through prototype streamline consolidate ROI third party lead generation reach. Dynamic functionality game plan follow up copy deck value-add usability deliverables."
+            ></div>
+            <!-- COIDEA:slider:item END -->
+
+            <!-- COIDEA:slider:item START -->
+            <div
+              id="slider-item-6"
+              class="slider-item"
+              style="background-image: url(../assets/about/img-6.jpg);"
+              data-id="6"
+              data-headline="Jessie Larson"
+              data-description="SEO retainer optimize tweak. Discovery third party game plan strategic partners scope out API post launch tackle it. Deliverables hackathon functionality strategic partners copy deck fluid. Value-add third party next level whiteboard scope out kick-off hackathon look and feel."
+            ></div>
+            <!-- COIDEA:slider:item END -->
+          </div>
+          <!-- COIDEA:slider END -->
+
+          <!-- COIDEA:slider:navigation START -->
+          <div class="slider-nav">
+            <span class="slider-nav-btn go-next">
+              <img src="./icon-arrow-top.png" />
+            </span>
+            <span class="slider-nav-length"></span>
+            <span class="slider-nav-progress">
+              <span class="progress"></span>
+            </span>
+            <span class="slider-nav-index">1</span>
+
+            <!-- if needed, uncomment this part for prev button - IMPORTANT: styling is not applied to this button!!! -->
+            <!-- <div class="slider-nav-btn go-prev">Prev</div> -->
+          </div>
+          <!-- COIDEA:slider:navigation END -->
+        </div>
+        <!-- COIDEA:slider:holder END -->
+
+        <!-- COIDEA:page:content START -->
+        <div class="slider-content">
+          <div class="slider-content-inner">
+            <span class="subheadline">fiction</span>
+            <h1>Our Story</h1>
+            <p>We inspire more people to read more, encourage them to share their enjoyment of reading and celebrate the difference that reading makes.</p>
+            <a href="#">Read the full Story</a>
+          </div>
+        </div>
+        <!-- COIDEA:page:content END -->
+      </section>
+      <!-- COIDEA:demo:slider END -->
+
+      <!-- COIDEA:page:modal START -->
+      <div class="coidea-modal">
+        <!-- COIDEA:page:modal:helper START -->
+        <div class="arrea black-arrea"></div>
+        <!-- COIDEA:page:modal:helper START -->
+
+        <!-- COIDEA:page:modal:video START -->
+        <div class="video-holder">
+          <video playsinline autoplay="autoplay" muted loop poster>
+            <source type="video/mp4" class="mp4" src="./background.mp4" />
+            <!-- <source type="video/webm" class="webm" src="assets/video/background.webm"> -->
+          </video>
+        </div>
+        <!-- COIDEA:page:modal:video END -->
+
+        <!-- COIDEA:page:modal:content START -->
+        <div class="coidea-modal-inner">
+          <h2></h2>
+          <div class="modal-content"></div>
+        </div>
+        <!-- COIDEA:page:modal:content END -->
+      </div>
+      <!-- COIDEA:page:modal END -->
+    </div>
+  </div>
+</template>
+
+<script>
+import { videoPlayer } from "./videoPlayer";
+export default {
+  name: "sex",
+  mounted() {
+    videoPlayer();
+  },
+  methods: {}
+};
+</script>
+
+
+<style scoped>
+@import "./videoPlayer.css";
+</style>

@@ -10,8 +10,6 @@ import test from 'meizi-ui'
 import 'font-awesome/css/font-awesome.css'
 
 
-
-
 //移动了位置
 import App from './App.vue'
 import router from './router'

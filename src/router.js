@@ -28,9 +28,18 @@ export default new Router({
       children: [{
         path: 'youth',
         name: 'youth',
-        component: () => import(/* webpackChunkName: "youth" */ './views/article/youth.vue'),
+        component: () => import(/* webpackChunkName: "youth" */ './views/article/youth/youth.vue'),
         meta: {
           title: '故乡遥',
+          hidden: false
+        }
+      }, 
+      {
+        path: 'sex',
+        name: 'sex',
+        component: () => import(/* webpackChunkName: "sex" */ './views/article/sex/sex.vue'),
+        meta: {
+          title: '性',
           hidden: false
         }
       }, ]

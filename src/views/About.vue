@@ -5,8 +5,18 @@
       <!-- <div id="avatar"><img style="width:100%;height:100%;border-radius:50%" src="../assets/about/avatar.jpg" alt=""></div> -->
       <div style="height:7rem;"></div>
       <CircleHover id="circleHover"></CircleHover>
-      <div id="nickname">Meizi</div>
-      <div id="position">前端开发者</div>
+      <div
+        id="nickname"
+        class="lax"
+        data-lax-scale="(vh) 0.2, (vh*0.8) 1, (vh*0.2) 1, -elh 0.2"
+        data-lax-anchor="self"
+      >Meizi</div>
+      <div
+        id="position"
+        class="lax"
+        data-lax-scale="(vh) 0.2, (vh*0.8) 1, (vh*0.2) 1, -elh 0.2"
+        data-lax-anchor="self"
+      >前端开发者</div>
       <div>
         <div id="introduce" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">
           heloe asskasjka akjskasjk aksjk
@@ -30,199 +40,63 @@
       </div>
     </div>
     <div id="project">
-      <div id="project-item-1">
-        <!-- COIDEA:demo:header START -->
-        <header>
-          <nav class="navigation">
-            <li>
-              <svg
-                version="1.1"
-                id="Capa_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 54 54"
-                style="enable-background:new 0 0 54 54;"
-                xml:space="preserve"
+      <div data-scroll class="page page--layout-2">
+        <div class="pro-content content--alternate content--padded">
+          <div class="content__item content__item--expand" style="--aspect-ratio: 700/525;">
+            <div class="content__item-imgwrap">
+              <div
+                class="content__item-img"
+                
               >
-                <circle cx="7" cy="47" r="4" />
-                <circle cx="27" cy="47" r="4" class="circle" />
-                <circle cx="47" cy="47" r="4" />
-                <circle cx="7" cy="27" r="4" class="circle" />
-                <circle cx="27" cy="27" r="4" />
-                <circle cx="47" cy="27" r="4" class="circle" />
-                <circle cx="7" cy="7" r="4" />
-                <circle cx="27" cy="7" r="4" class="circle" />
-                <circle cx="47" cy="7" r="4" />
-                <g />
-                <g />
-                <g />
-                <g />
-                <g />
-                <g />
-                <g />
-                <g />
-                <g />
-                <g />
-                <g />
-                <g />
-                <g />
-                <g />
-                <g />
-              </svg>
-            </li>
-          </nav>
-
-          <nav class="main">
-            <li>
-              <a href="http://www.htmleaf.com/jQuery/Layout-Interface/201903185568.html">article</a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/COIDEAwebsite/slideshow-with-fullscreen-detail-view"
-                target="_blank"
-              >Github</a>
-            </li>
-          </nav>
-        </header>
-        <!-- COIDEA:demo:header END -->
-
-        <!-- COIDEA:demo:slider START -->
-        <section class="coidea-slider">
-          <!-- COIDEA:animation:helpers START -->
-          <div class="slider-helpers">
-            <div class="arrea black-arrea"></div>
-            <div class="arrea white-arrea"></div>
-          </div>
-          <!-- COIDEA:animation:helpers END -->
-
-          <!-- COIDEA:slider:holder START -->
-          <div class="slider-holder">
-            <!-- COIDEA:slider START -->
-            <div class="slider">
-              <!-- COIDEA:slider:item START -->
-              <div
-                id="slider-item-1"
-                class="slider-item"
-                style="background-image: url(../assets/about/img-1.jpg);"
-                data-id="1"
-                data-headline="Renee Johnson"
-                data-description="Look and feel client-facing usability follow up. Affiliate marketing prototype look and feel ROI flesh out. Target audience lean organic tweak CTA. Reach internally affiliate marketing ecosystem mission statement lead generation implementation. Ecosystem lead generation value-add hackathon ecosystem optimize follow up onboarding."
-              ></div>
-              <!-- COIDEA:slider:item END -->
-
-              <!-- COIDEA:slider:item START -->
-              <div
-                id="slider-item-2"
-                class="slider-item"
-                style="background-image: url(../assets/about/img-2.jpg);"
-                data-id="2"
-                data-headline="Logan Boyd"
-                data-description="Conversion mission statement client-facing transparent post launch in the queue hackathon. Credentials OLA ETA follow up innovation mobile-first scope out mission statement credentials. B2B push the envelope plow through take a stab at it segment. Game changer proximity regroup value proposition mobile-first reach proximity."
-              ></div>
-              <!-- COIDEA:slider:item END -->
-
-              <!-- COIDEA:slider:item START -->
-              <div
-                id="slider-item-3"
-                class="slider-item"
-                style="background-image: url(../assets/about/img-3.jpg);"
-                data-id="3"
-                data-headline="Leona Day"
-                data-description="Good fit ramp up usability transparent prototype traction heads down fluid innovation. Good fit value creation flesh out discovery transparent CTA tweak . OLA deliverables scope out proposed usability game changer pipeline ramp up. Credentials mission statement reach discovery flesh out usability internally ROI. Fluid mock up user persona value creation."
-              ></div>
-              <!-- COIDEA:slider:item END -->
-
-              <!-- COIDEA:slider:item START -->
-              <div
-                id="slider-item-4"
-                class="slider-item"
-                style="background-image: url(../assets/about/img-4.jpg);"
-                data-id="4"
-                data-headline="Linda Young"
-                data-description="SEO retainer optimize tweak. Discovery third party game plan strategic partners scope out API post launch tackle it. Deliverables hackathon functionality strategic partners copy deck fluid. Value-add third party next level whiteboard scope out kick-off hackathon look and feel."
-              ></div>
-              <!-- COIDEA:slider:item END -->
-
-              <!-- COIDEA:slider:item START -->
-              <div
-                id="slider-item-5"
-                class="slider-item"
-                style="background-image: url(../assets/about/img-5.jpg);"
-                data-id="5"
-                data-headline="Katrina Steward"
-                data-description="Ramp up lean target audience dynamic look and feel innovation kick-off implementation retainer. Optimize heads down onboarding segment. Retainer good fit tweak affiliate marketing value proposition. Ecosystem organic cross platform regroup ramp up scope out ETA dev environment. Plow through prototype streamline consolidate ROI third party lead generation reach. Dynamic functionality game plan follow up copy deck value-add usability deliverables."
-              ></div>
-              <!-- COIDEA:slider:item END -->
-
-              <!-- COIDEA:slider:item START -->
-              <div
-                id="slider-item-6"
-                class="slider-item"
-                style="background-image: url(../assets/about/img-6.jpg);"
-                data-id="6"
-                data-headline="Jessie Larson"
-                data-description="SEO retainer optimize tweak. Discovery third party game plan strategic partners scope out API post launch tackle it. Deliverables hackathon functionality strategic partners copy deck fluid. Value-add third party next level whiteboard scope out kick-off hackathon look and feel."
-              ></div>
-              <!-- COIDEA:slider:item END -->
+              <ScrollImg :imgSrc="bookshopIndex"></ScrollImg>
+              </div>
             </div>
-            <!-- COIDEA:slider END -->
-
-            <!-- COIDEA:slider:navigation START -->
-            <div class="slider-nav">
-              <span class="slider-nav-btn go-next">
-                <img src="../assets/about/icon-arrow-top.png" />
-              </span>
-              <span class="slider-nav-length"></span>
-              <span class="slider-nav-progress">
-                <span class="progress"></span>
-              </span>
-              <span class="slider-nav-index">1</span>
-
-              <!-- if needed, uncomment this part for prev button - IMPORTANT: styling is not applied to this button!!! -->
-              <!-- <div class="slider-nav-btn go-prev">Prev</div> -->
+            <h2 class="content__item-title">BookShop</h2>
+            <p
+              data-aos="fade-up"
+              data-aos-anchor-placement="bottom"
+              data-aos-easing="ease"
+              data-aos-delay="400"
+              class="content__item-description"
+            >A little happy sunlight shining through there.Just let your mind wander and enjoy. This should make you happy. Just let your mind wander and enjoy. This should make you happy. Just let your mind wander and enjoy. This should make you happy.  In nature, dead trees are just as normal as live trees.</p>
+          </div>
+          <div class="content__item content__item--expand" style="--aspect-ratio: 800/462;">
+            <div class="content__item-imgwrap">
+              <div
+                class="content__item-img"
+                style="background-image: url(../assets/blog/img-2.jpg);"
+              ></div>
             </div>
-            <!-- COIDEA:slider:navigation END -->
+            <h2 class="content__item-title">Nj</h2>
+            <p
+              class="content__item-description"
+              data-aos="fade-up"
+              data-aos-anchor-placement="bottom"
+              data-aos-easing="ease"
+              data-aos-delay="400"
+            >All you have to learn here is how tJust let your mind wander and enjoy. This should make you happy. Just let your mind wander and enjoy. This should make you happy. o have fun. No pressure. Just relax and watch it happen.</p>
           </div>
-          <!-- COIDEA:slider:holder END -->
-
-          <!-- COIDEA:page:content START -->
-          <div class="slider-content">
-            <div class="slider-content-inner">
-              <span class="subheadline">fiction</span>
-              <h1>Our Story</h1>
-              <p>We inspire more people to read more, encourage them to share their enjoyment of reading and celebrate the difference that reading makes.</p>
-              <a href="#">Read the full Story</a>
+          <div class="content__item content__item--expand" style="--aspect-ratio: 700/447;">
+            <div class="content__item-imgwrap">
+              <div
+                class="content__item-img"
+                style="background-image: url(../assets/blog/img-2.jpg);"
+              ></div>
             </div>
+            <h2 class="content__item-title">Al</h2>
+            <p
+              class="content__item-description"
+              data-aos="fade-up"
+              data-aos-anchor-placement="bottom"
+              data-aos-easing="ease"
+              data-aos-delay="400"
+            >Just let your mind wander and enjoy. This should make you happy. There are no mistakes. Just let your mind wander and enjoy. This should make you happy. Just let your mind wander and enjoy. This should make you happy. Just let your mind wander and enjoy. This should make you happy. You can fix anything that happens.</p>
           </div>
-          <!-- COIDEA:page:content END -->
-        </section>
-        <!-- COIDEA:demo:slider END -->
-
-        <!-- COIDEA:page:modal START -->
-        <div class="coidea-modal">
-          <!-- COIDEA:page:modal:helper START -->
-          <div class="arrea black-arrea"></div>
-          <!-- COIDEA:page:modal:helper START -->
-
-          <!-- COIDEA:page:modal:video START -->
-          <div class="video-holder">
-            <video playsinline autoplay="autoplay" muted loop poster>
-              <source type="video/mp4" class="mp4" src="../assets/about/background.mp4" />
-              <!-- <source type="video/webm" class="webm" src="assets/video/background.webm"> -->
-            </video>
-          </div>
-          <!-- COIDEA:page:modal:video END -->
-
-          <!-- COIDEA:page:modal:content START -->
-          <div class="coidea-modal-inner">
-            <h2></h2>
-            <div class="modal-content"></div>
-          </div>
-          <!-- COIDEA:page:modal:content END -->
+          <p class="credits">
+            Photography by
+            <a href="https://www.instagram.com/byfoul/">Frankie Cordoba</a>
+          </p>
         </div>
-        <!-- COIDEA:page:modal END -->
       </div>
     </div>
   </div>
@@ -231,9 +105,11 @@
 <script>
 // @ is an alias to /src
 import Logo from "@/components/Logo.vue";
+import lax from "lax.js";
 import CircleHover from "@/components/CircleHover.vue";
+import ScrollImg from "@/components/ScrollImg.vue";
 import { novacancy } from "@/assets/about/jquery.novacancy.js"; //注意路径
-import { videoPlayer } from "@/assets/about/videoPlayer.js";
+import { SmoothScrolling } from "@/assets/about/SmoothScrolling.js";
 
 //AOS  https://github.com/michalsnik/aos/tree/v2
 //  http://www.htmleaf.com/jQuery/Layout-Interface/201606093578.html
@@ -248,12 +124,18 @@ export default {
   name: "about",
   components: {
     Logo,
-    CircleHover
+    CircleHover,
+    ScrollImg
   },
   data() {
-    return {};
+    return {
+      // 向子组件传递图片地址需要将图片模块导入，ES6 为 import ， common.js 为  require 。
+      bookshopIndex:require('../assets/about/bookshop-index.jpg'),
+    };
   },
-  created() {},
+  created() {
+    // setup lax
+  },
   mounted() {
     AOS.init({
       easing: "ease-out-back",
@@ -262,12 +144,26 @@ export default {
     novacancy();
     this.init();
 
-    videoPlayer();
+    //lax.js 滚动效果滚动事件绑定
+    this.initLaxJS();
+
+    // 图片滚动效果
+    // SmoothScrolling();
   },
   methods: {
-    down() {
-      
+    initLaxJS() {
+      window.onload = function() {
+        lax.setup(); // init
+
+        const updateLax = () => {
+          lax.update(window.scrollY);
+          window.requestAnimationFrame(updateLax);
+        };
+
+        window.requestAnimationFrame(updateLax);
+      };
     },
+    down() {},
     mouseover() {
       console.log("mouseover");
       var sloganObj = document.getElementById("slogan");
@@ -295,13 +191,12 @@ export default {
 </script>
 
 <style scoped>
-@import "../assets/about/videoPlayer.css";
+@import "../assets/about/SmoothScrolling.css";
 #about {
-  position: absolute;
   /* 内容大于屏幕即要这样？ */
-  width: 100vw;
   color: white;
 }
+
 #nickname {
   font-weight: 300;
   text-align: center;
@@ -323,12 +218,6 @@ export default {
 #profile {
   width: 100vw;
   height: 100vh;
-}
-#project {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  background-color: #fff;
 }
 #avatar {
   height: 8rem;
@@ -357,6 +246,10 @@ export default {
   color: #d94f5c;
   -webkit-animation: pulse 2s infinite;
   animation: pulse 2s infinite;
+}
+.section {
+  width: 100vw;
+  height: 100vh;
 }
 #slogan {
   border: 1px solid red;

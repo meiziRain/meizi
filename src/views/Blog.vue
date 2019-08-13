@@ -44,7 +44,9 @@
                 Photo by
                 <br />Ryan Tang
               </div>
+              <router-link :to="{ path: '/blog/sex'}">
               <div class="link">Read the Story</div>
+              </router-link>
             </div>
           </div>
         </div>
