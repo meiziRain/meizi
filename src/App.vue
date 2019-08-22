@@ -69,9 +69,9 @@ export default {
     clearInterval(this.loader);
   },
   mounted() {
-
     // ref属性的使用不能放在 v-if v-else中，使用了v-if 后，将不会渲染子组件内容，导致this.$refs获取不到对应的名称
     this.$refs.nav.keepNavRender();
+
 
     //dom生成后
     // Preload images
@@ -105,7 +105,7 @@ export default {
         /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i
       );
       return flag;
-    }
+    },
   }
 };
 </script>
@@ -168,7 +168,7 @@ export default {
 #iris {
   position: fixed;
   z-index: 999;
-  right:2%;
+  right: 2%;
   top: 4%;
 }
 </style>

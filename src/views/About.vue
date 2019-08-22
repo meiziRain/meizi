@@ -3,7 +3,7 @@
     <!-- <div id="slogan" @mouseover="mouseover()" @mouseout="mouseout()"></div> -->
     <div id="profile">
       <!-- <div id="avatar"><img style="width:100%;height:100%;border-radius:50%" src="../assets/about/avatar.jpg" alt=""></div> -->
-      <div style="height:7rem;"></div>
+      <div style="height:18vh;"></div>
       <CircleHover id="circleHover"></CircleHover>
       <div
         id="nickname"
@@ -40,64 +40,41 @@
       </div>
     </div>
     <div id="project">
-      <div data-scroll class="page page--layout-2">
-        <div class="pro-content content--alternate content--padded">
-          <div class="content__item content__item--expand" style="--aspect-ratio: 700/525;">
-            <div class="content__item-imgwrap">
-              <div
-                class="content__item-img"
-                
-              >
-              <ScrollImg :imgSrc="bookshopIndex"></ScrollImg>
-              </div>
-            </div>
-            <h2 class="content__item-title">BookShop</h2>
+      <div style="height:20vh">项目经历</div>
+      <div class="item">
+        <!-- <ScrollImg :imgSrc="bookshopIndex"></ScrollImg> -->
+        <div class="bookshop_content">
+          <video autoplay controls>
+            <source src="../assets/about/bookshop.mp4" type="video/mp4" />
+          </video>
+
+          <!-- <h2 class="item-title">BookShop</h2> -->
+          <div class="description">
             <p
               data-aos="fade-up"
               data-aos-anchor-placement="bottom"
               data-aos-easing="ease"
               data-aos-delay="400"
-              class="content__item-description"
-            >A little happy sunlight shining through there.Just let your mind wander and enjoy. This should make you happy. Just let your mind wander and enjoy. This should make you happy. Just let your mind wander and enjoy. This should make you happy.  In nature, dead trees are just as normal as live trees.</p>
+              class="aboutBaseFont"
+            >
+              <br />前端基于
+              <CopyText content="Vue.js" animationName="rubberBand"></CopyText>框架，使用 vuex 实现多页面间的数据传输，
+              axios 与后端进行数据交互，搭配elementUI ，ivew等开源组件库。
+              <br />后端基于
+              <CopyText content="Spring+SpringMVC+Mybatis" animationName="rubberBand"></CopyText>整合框架。用户密码使用MD5加密，评论敏感词过滤，session 保持购物车数据 。
+              <br />
+              <br />
+              <i class="fab fa-github"></i>
+            </p>
           </div>
-          <div class="content__item content__item--expand" style="--aspect-ratio: 800/462;">
-            <div class="content__item-imgwrap">
-              <div
-                class="content__item-img"
-                style="background-image: url(../assets/blog/img-2.jpg);"
-              ></div>
-            </div>
-            <h2 class="content__item-title">Nj</h2>
-            <p
-              class="content__item-description"
-              data-aos="fade-up"
-              data-aos-anchor-placement="bottom"
-              data-aos-easing="ease"
-              data-aos-delay="400"
-            >All you have to learn here is how tJust let your mind wander and enjoy. This should make you happy. Just let your mind wander and enjoy. This should make you happy. o have fun. No pressure. Just relax and watch it happen.</p>
-          </div>
-          <div class="content__item content__item--expand" style="--aspect-ratio: 700/447;">
-            <div class="content__item-imgwrap">
-              <div
-                class="content__item-img"
-                style="background-image: url(../assets/blog/img-2.jpg);"
-              ></div>
-            </div>
-            <h2 class="content__item-title">Al</h2>
-            <p
-              class="content__item-description"
-              data-aos="fade-up"
-              data-aos-anchor-placement="bottom"
-              data-aos-easing="ease"
-              data-aos-delay="400"
-            >Just let your mind wander and enjoy. This should make you happy. There are no mistakes. Just let your mind wander and enjoy. This should make you happy. Just let your mind wander and enjoy. This should make you happy. Just let your mind wander and enjoy. This should make you happy. You can fix anything that happens.</p>
-          </div>
-          <p class="credits">
-            Photography by
-            <a href="https://www.instagram.com/byfoul/">Frankie Cordoba</a>
-          </p>
         </div>
       </div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <p class="credits">
+        Photography by
+        <a href="https://www.instagram.com/byfoul/">Frankie Cordoba</a>
+      </p>
     </div>
   </div>
 </template>
@@ -108,8 +85,8 @@ import Logo from "@/components/Logo.vue";
 import lax from "lax.js";
 import CircleHover from "@/components/CircleHover.vue";
 import ScrollImg from "@/components/ScrollImg.vue";
+import CopyText from "@/components/CopyText.vue";
 import { novacancy } from "@/assets/about/jquery.novacancy.js"; //注意路径
-import { SmoothScrolling } from "@/assets/about/SmoothScrolling.js";
 
 //AOS  https://github.com/michalsnik/aos/tree/v2
 //  http://www.htmleaf.com/jQuery/Layout-Interface/201606093578.html
@@ -125,12 +102,13 @@ export default {
   components: {
     Logo,
     CircleHover,
-    ScrollImg
+    ScrollImg,
+    CopyText
   },
   data() {
     return {
       // 向子组件传递图片地址需要将图片模块导入，ES6 为 import ， common.js 为  require 。
-      bookshopIndex:require('../assets/about/bookshop-index.jpg'),
+      bookshopIndex: require("../assets/about/bookshop-index.jpg")
     };
   },
   created() {
@@ -146,9 +124,6 @@ export default {
 
     //lax.js 滚动效果滚动事件绑定
     this.initLaxJS();
-
-    // 图片滚动效果
-    // SmoothScrolling();
   },
   methods: {
     initLaxJS() {
@@ -191,7 +166,9 @@ export default {
 </script>
 
 <style scoped>
-@import "../assets/about/SmoothScrolling.css";
+video:focus {
+  outline: none;
+}
 #about {
   /* 内容大于屏幕即要这样？ */
   color: white;
@@ -206,12 +183,7 @@ export default {
   letter-spacing: 0.2em;
   /* transition: font-weight 0.2s ease; */
 }
-@media screen and (max-width: 400px) {
-  #nickname {
-    font-weight: 300;
-    font-size: 3em;
-  }
-}
+
 #nickname:hover {
   font-weight: 600;
 }
@@ -247,9 +219,43 @@ export default {
   -webkit-animation: pulse 2s infinite;
   animation: pulse 2s infinite;
 }
+.item {
+  border: 1px solid red;
+  height: 100vh;
+  width: 100vw;
+}
+video {
+  display: inline-block;
+  width: 58%;
+  height: auto;
+  margin-left: 2%;
+  object-fit: fill;
+}
+.description {
+  display: inline-block;
+  width: 30%;
+  padding: 0 3% 0 3%;
+  vertical-align: top;
+}
+.bookshop_content{
+}
 .section {
   width: 100vw;
   height: 100vh;
+}
+.fa-github {
+  font-size: 2.5em;
+  cursor: pointer;
+}
+.fa-github:hover {
+  color: #d94f5c;
+}
+.aboutBaseFont{
+	word-break: break-word;
+	line-height: 1.4;
+	font-weight: 400;
+  font-size: 1em;
+  letter-spacing: 1px;
 }
 #slogan {
   border: 1px solid red;
@@ -326,6 +332,25 @@ export default {
   100% {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #nickname {
+    font-weight: 300;
+    font-size: 3em;
+  }
+  .description {
+    width: 96%;
+    float: none;
+    padding: 2%;
+    border: 1px solid red;
+  }
+  video {
+    float: none;
+    width: 100vw;
+    height: auto;
+      margin:0;
   }
 }
 </style>

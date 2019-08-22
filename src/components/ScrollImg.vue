@@ -16,7 +16,6 @@ export default {
   },
   created() {},
   mounted() {
-      console.log(this.$el);
     this.scrollImgInit();
   },
   methods: {

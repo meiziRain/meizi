@@ -4,22 +4,31 @@ import Vue from 'vue'
 import store from './store'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
+// import ElementUI from 'element-ui'
+// import 'element-ui/lib/theme-chalk/index.css'
+// Vue.use(ElementUI);
 import test from 'meizi-ui'
 import 'font-awesome/css/font-awesome.css'
+
+import animated from 'animate.css' 
+import 'balloon-css';
+ Vue.use(animated)
 
 
 //移动了位置
 import App from './App.vue'
 import router from './router'
 
+//复制到粘贴板
+import clipboard from 'clipboard';
+Vue.prototype.clipboard = clipboard;
+
 
 import $ from 'jquery'
 Vue.use(test)
 
 Vue.config.productionTip = false
-Vue.use(ElementUI);
+
 
 // use lodash
 let _ = require('lodash')

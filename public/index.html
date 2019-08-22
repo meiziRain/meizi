@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
     <link rel="stylesheet" type="text/css" href="assets/base.css" />
-    <link rel="stylesheet" type="text/css" href="assets/aos.css" />
     <!-- 谷歌字体 -->
     <link
       href="https://fonts.font.im/css?family=Audiowide|Iceland|Monoton|Pacifico|Press+Start+2P|Vampiro+One|Abril+Fatface|Josefin+Sans|Raleway:300,400,900|Montserrat:100"
@@ -15,7 +14,7 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      href="assets/slick.css"
     />
 
     <!-- font-awesome字体图标库 -->
@@ -104,16 +103,25 @@
         font-size: 0.3em;
         color: wheat;
       }
+      .text {
+        /* animate.css  必须是block 或者inline-block ，动画才能生效。 */
+        display: inline-block;
+        padding: 2px 4px;
+        color: #d94f5c;
+        background-color: #2e2e2e;
+        cursor: pointer;
+        border-radius: 4px;
+      }
     </style>
-    <script src="assets/fontawesome.js"></script>
+    <script type="text/javascript" src="assets/fontawesome.js"></script>
     <script type="text/javascript" src="assets/three.min.js"></script>
     <script type="text/javascript" src="assets/Detector.js"></script>
-    <script src="assets/Sky.js"></script>
-    <script src="assets/hammer.min.js"></script>
-    <script src="assets/charming.min.js"></script>
+    <script type="text/javascript" src="assets/Sky.js"></script>
+    <script type="text/javascript" src="assets/hammer.min.js"></script>
+    <script type="text/javascript" src="assets/charming.min.js"></script>
     <!-- 已经在body中引入高版本 -->
     <!-- <script src="assets/TweenMax.min.js"></script> -->
-    <script src="assets/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="assets/imagesloaded.pkgd.min.js"></script>
     <!-- <script src="assets/scrollbot.js"></script> -->
 
     <!-- cloud -->
@@ -379,6 +387,7 @@
         return false;
       }
     </script>
+    <script src='https://code.playcanvas.com/playcanvas-stable.min.js'></script>
   </head>
   <body oncontextmenu="doNothing()">
     <script src="assets/mo.js"></script>
