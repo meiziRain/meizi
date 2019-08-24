@@ -1,6 +1,8 @@
 <template>
   <div id="studio">
-<SocialLinkCube></SocialLinkCube>
+<!-- <SocialLinkCube></SocialLinkCube> -->
+<!-- <Carousel></Carousel> -->
+<!-- <Carousel3D></Carousel3D> -->
   </div>
 </template>
 
@@ -8,11 +10,14 @@
 // @ is an alias to /src
 import Star from "@/components/Star.vue";
 import SocialLinkCube from "@/components/SocialLinkCube.vue";
+import Carousel from "@/components/Carousel.vue";
+import Carousel3D from "@/components/Carousel3D.vue";
 export default {
   name: "studio",
   components: {
     Star,
-    SocialLinkCube
+    Carousel,
+    Carousel3D,
   }
 };
 </script>

@@ -15,6 +15,9 @@ import 'balloon-css';
  Vue.use(animated)
 
 
+// about页轮播图
+
+
 //移动了位置
 import App from './App.vue'
 import router from './router'

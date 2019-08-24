@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" ref="app">
     <!-- 预加载博客每日图 -->
     <div v-show="false" id="toLoadImg"></div>
 
@@ -69,9 +69,9 @@ export default {
     clearInterval(this.loader);
   },
   mounted() {
+    this.notify();
     // ref属性的使用不能放在 v-if v-else中，使用了v-if 后，将不会渲染子组件内容，导致this.$refs获取不到对应的名称
     this.$refs.nav.keepNavRender();
-
 
     //dom生成后
     // Preload images
@@ -100,12 +100,42 @@ export default {
     // });
   },
   methods: {
+    notify() {
+      Notification.requestPermission(prem => {
+        prem == "granted"; // 同意
+        prem == "denied"; // 拒绝
+      });
+
+      let permission = Notification.permission;
+
+      if (permission == "granted") {
+        // 已同意，开始发送通知
+        const notice = new Notification("前端宇宙情报局", {
+          body: "这20个不常用的Web API真的有用吗?，别问，问就是有用🈶",
+          icon: "我的掘金头像",
+          data: {
+            url: "https://www.baidu.com"
+          }
+        });
+
+        notice();
+        // 点击回调
+        notice.onclick = () => {
+          window.open(notice.data.url); // 当用户点击通知时，在浏览器打开百度网站
+        };
+      } else if (permission == "denied") {
+        // 不同意，发不了咯
+      } else {
+        // 其他状态，可以重新发送授权提示
+        Notification.requestPermission();
+      }
+    },
     _isMobile() {
       let flag = navigator.userAgent.match(
         /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i
       );
       return flag;
-    },
+    }
   }
 };
 </script>
