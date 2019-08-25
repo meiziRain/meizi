@@ -15,8 +15,8 @@ import 'balloon-css';
  Vue.use(animated)
 
 
-// about页轮播图
-
+//css-doodle 背景
+import  'css-doodle';
 
 //移动了位置
 import App from './App.vue'

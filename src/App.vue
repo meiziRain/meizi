@@ -69,7 +69,7 @@ export default {
     clearInterval(this.loader);
   },
   mounted() {
-    this.notify();
+    // this.notify();
     // ref属性的使用不能放在 v-if v-else中，使用了v-if 后，将不会渲染子组件内容，导致this.$refs获取不到对应的名称
     this.$refs.nav.keepNavRender();
 

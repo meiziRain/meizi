@@ -67,7 +67,6 @@ export default {
       let me = this;
       let menu = document.getElementById("menu");
       let current = _.random(me.menu.length - 1);
-      console.log(me.menu.length - 1);
       menu.className = "menu menu--" + me.menu[current];
     },
 

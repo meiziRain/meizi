@@ -6,11 +6,11 @@
           <div class="ch-info">
             <div class="ch-info-front ch-img-1"></div>
             <div class="ch-info-back">
-              <h3>Mouse</h3>
-              <p>
+              <h3>Say</h3>
+              <!-- <p>
                 by Alexander Shumihin
                 <a href="http://www.htmleaf.com/">View on htmleaf</a>
-              </p>
+              </p> -->
             </div>
           </div>
         </div>
