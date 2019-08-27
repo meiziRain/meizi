@@ -194,7 +194,6 @@ export default {
   animation: fade 2s ease forwards;
 }
 @-webkit-keyframes fade {
-  /*设置内容由显示变为隐藏*/
   0% {
     opacity: 0;
   }
@@ -203,7 +202,6 @@ export default {
   }
 }
 @-moz-keyframes fade {
-  /*设置内容由显示变为隐藏*/
   0% {
     opacity: 0;
   }
@@ -212,7 +210,6 @@ export default {
   }
 }
 @-o-keyframes fade {
-  /*设置内容由显示变为隐藏*/
   0% {
     opacity: 0;
   }
@@ -221,7 +218,6 @@ export default {
   }
 }
 @keyframes fade {
-  /*设置内容由显示变为隐藏*/
   0% {
     opacity: 0;
   }

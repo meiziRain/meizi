@@ -1,4 +1,7 @@
+
 <template>
+  <!-- 所有环的阴影色 ：white 可全替换 -->
+  <!-- https://codepen.io/meizirain/pen/gOYmeGY?editors=1100 -->
   <div id="neonmenu">
     <div class="button-container">
       <div class="button-wrapper">
@@ -108,7 +111,7 @@ export default {
   54%,
   56%,
   100% {
-    box-shadow: 0 0 9px 2px #228dff, 0 0 9px 2px #228dff inset;
+    box-shadow: 0 0 9px 2px white, 0 0 9px 2px white inset;
   }
   20%,
   24%,
@@ -126,7 +129,7 @@ export default {
   54%,
   56%,
   100% {
-    box-shadow: 0 0 9px 2px #228dff, 0 0 9px 2px #228dff inset;
+    box-shadow: 0 0 9px 2px white, 0 0 9px 2px white inset;
   }
   20%,
   24%,
@@ -196,13 +199,13 @@ export default {
   height: 100%;
 }
 .button-container.open .button {
-  border-color: #d94f5c;
-  box-shadow: 0 0 9px 2px #d94f5c, 0 0 9px 2px #d94f5c inset;
+  border-color: var(--color-main);
+  box-shadow: 0 0 9px 2px var(--color-main), 0 0 9px 2px var(--color-main) inset;
 }
 .button-container.open .button span {
   width: 3px;
-  background-color: #d94f5c;
-  box-shadow: 0 0 9px 2px #d94f5c, 0 0 9px 2px #d94f5c inset;
+  background-color: var(--color-main);
+  box-shadow: 0 0 9px 2px var(--color-main), 0 0 9px 2px var(--color-main) inset;
   transition: margin 300ms, border-radius 300ms 600ms, height 300ms 600ms,
     -webkit-transform 300ms;
   transition: margin 300ms, transform 300ms, border-radius 300ms 600ms,
@@ -233,9 +236,9 @@ export default {
   transition-delay: 0s;
 }
 .button-container.open .button-child {
-  box-shadow: 0 0 9px 2px #228dff, 0 0 9px 2px #228dff inset;
+  box-shadow: 0 0 9px 2px white, 0 0 9px 2px white inset;
   transition-delay: 500ms;
-  color: #d94f5c;
+  color: var(--color-main);
 }
 .button-container.open .button-child i {
   opacity: 1;
@@ -279,7 +282,7 @@ export default {
   border-radius: 50%;
   border: 3px solid #ffffff;
   z-index: 40;
-  box-shadow: 0 0 9px 2px #228dff, 0 0 9px 2px #228dff inset;
+  box-shadow: 0 0 9px 2px white, 0 0 9px 2px white inset;
   /* 分别是外内shadow color  */
   transition: all 300ms ease-in-out 500ms;
 }
@@ -295,7 +298,7 @@ export default {
   background-color: #ffffff;
   border-radius: 50%;
   /* 三点的颜色 */
-  box-shadow: 0 0 9px 2px #ffffff, 0 0 9px 2px #ffffff inset;
+  box-shadow: 0 0 9px 2px var(--color-main), 0 0 9px 2px var(--color-main) inset;
   transition: height 300ms, margin 300ms 600ms, background-color 600ms,
     border-radius 600ms, -webkit-transform 600ms;
   transition: height 300ms, transform 600ms, margin 300ms 600ms,

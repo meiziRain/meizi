@@ -197,12 +197,12 @@ export default {
 .menu--sebastian .menu__link:hover,
 .menu--sebastian .menu__link:focus {
   /* color: #929292; */
-  color: #d94f5c;
+  color: var(--color-main);
   /* transform: scale(1.2);  */
 }
 
 .menu--sebastian .menu__item--current .menu__link {
-  color: #d94f5c;
+  color: var(--color-main);
 }
 
 .menu--sebastian .menu__link::before,
@@ -212,7 +212,7 @@ export default {
   left: 0;
   width: 100%;
   height: 2px;
-  background: #d94f5c;
+  background: var(--color-main);
   -webkit-transform: scale3d(0, 1, 1);
   transform: scale3d(0, 1, 1);
   -webkit-transition: -webkit-transform 0.2s;
@@ -256,11 +256,11 @@ export default {
 .menu--prospero .menu__link:hover,
 .menu--prospero .menu__link:focus {
   /* color: #929292; */
-  color: #d94f5c;
+  color: var(--color-main);
 }
 
 .menu--prospero .menu__item--current .menu__link {
-  color: #d94f5c;
+  color: var(--color-main);
 }
 
 .menu--prospero .menu__link::before {
@@ -270,7 +270,7 @@ export default {
   left: 0;
   width: 100%;
   height: 4px;
-  background: #d94f5c;
+  background: var(--color-main);
   -webkit-transform: scale3d(0, 1, 1);
   transform: scale3d(0, 1, 1);
   -webkit-transition: -webkit-transform 0.1s;
@@ -308,7 +308,7 @@ export default {
 }
 
 .menu--viola .menu__item--current .menu__link {
-  color: #d94f5c;
+  color: var(--color-main);
 }
 
 .menu--viola .menu__item::before,
@@ -317,7 +317,7 @@ export default {
 .menu--viola .menu__link::after {
   content: "";
   position: absolute;
-  background: #d94f5c;
+  background: var(--color-main);
   -webkit-transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
 }
@@ -395,11 +395,11 @@ export default {
 .menu--antonio .menu__link:hover,
 .menu--antonio .menu__link:focus {
   /* color: #929292; */
-  color: #d94f5c;
+  color: var(--color-main);
 }
 
 .menu--antonio .menu__item--current .menu__link {
-  color: #d94f5c;
+  color: var(--color-main);
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
@@ -410,7 +410,7 @@ export default {
 .menu--antonio .menu__link::after {
   content: "";
   position: absolute;
-  background: #d94f5c;
+  background: var(--color-main);
   -webkit-transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
 }
@@ -503,11 +503,11 @@ export default {
 .menu--miranda .menu__link:hover,
 .menu--miranda .menu__link:focus {
   /* color: #929292; */
-  color: #d94f5c;
+  color: var(--color-main);
 }
 
 .menu--miranda .menu__item--current .menu__link {
-  color: #d94f5c;
+  color: var(--color-main);
 }
 
 .menu--miranda .menu__item::before,
@@ -516,7 +516,7 @@ export default {
 .menu--miranda .menu__link::after {
   content: "";
   position: absolute;
-  background: #d94f5c;
+  background: var(--color-main);
   -webkit-transition: -webkit-transform 0.1s;
   transition: transform 0.1s;
   -webkit-transition-timing-function: cubic-bezier(1, 0.68, 0.16, 0.9);
@@ -642,11 +642,11 @@ export default {
 .menu--ariel .menu__link:hover,
 .menu--ariel .menu__link:focus {
   /* color: #929292; */
-  color: #d94f5c;
+  color: var(--color-main);
 }
 
 .menu--ariel .menu__item--current .menu__link {
-  color: #d94f5c;
+  color: var(--color-main);
 }
 
 .menu--ariel .menu__item::before,
@@ -655,7 +655,7 @@ export default {
 .menu--ariel .menu__link::after {
   content: "";
   position: absolute;
-  background: #d94f5c;
+  background: var(--color-main);
   -webkit-transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   -webkit-transition-timing-function: cubic-bezier(0.44, 0.05, 0.55, 0.95);
@@ -726,11 +726,11 @@ export default {
 .menu--caliban .menu__link:hover,
 .menu--caliban .menu__link:focus {
   /* color: #929292; */
-  color: #d94f5c;
+  color: var(--color-main);
 }
 
 .menu--caliban .menu__item--current .menu__link {
-  color: #d94f5c;
+  color: var(--color-main);
 }
 
 .menu--caliban .menu__link::before,
@@ -741,7 +741,7 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  border: 2px solid #d94f5c;
+  border: 2px solid var(--color-main);
   -webkit-transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
 }
@@ -785,11 +785,11 @@ export default {
 .menu--ferdinand .menu__link:hover,
 .menu--ferdinand .menu__link:focus {
   /* color: #929292; */
-  color: #d94f5c;
+  color: var(--color-main);
 }
 
 .menu--ferdinand .menu__item--current .menu__link {
-  color: #d94f5c;
+  color: var(--color-main);
 }
 
 .menu--ferdinand .menu__link::before {
@@ -799,7 +799,7 @@ export default {
   left: 0;
   width: 100%;
   height: 2px;
-  background: #d94f5c;
+  background: var(--color-main);
   -webkit-transform: scale3d(0, 5, 1);
   transform: scale3d(0, 5, 1);
   -webkit-transform-origin: 0% 50%;
@@ -834,11 +834,11 @@ export default {
 .menu--francisco .menu__link:hover,
 .menu--francisco .menu__link:focus {
   /* color: #929292; */
-  color: #d94f5c;
+  color: var(--color-main);
 }
 
 .menu--francisco .menu__item--current .menu__link {
-  color: #d94f5c;
+  color: var(--color-main);
 }
 
 .menu--francisco .menu__link::before {
@@ -849,7 +849,7 @@ export default {
   width: 100%;
   height: 2px;
   opacity: 0;
-  background: #d94f5c;
+  background: var(--color-main);
   -webkit-transform: translate3d(0, -3em, 0);
   transform: translate3d(0, -3em, 0);
   -webkit-transition: -webkit-transform 0s 0.3s, opacity 0.2s;
@@ -933,7 +933,7 @@ export default {
 .menu--trinculo .menu__link:hover,
 .menu--trinculo .menu__link:focus {
   /* color: #929292; */
-  color: #d94f5c;
+  color: var(--color-main);
 }
 
 .menu--trinculo .menu__link::before {
@@ -944,7 +944,7 @@ export default {
   width: 100%;
   height: 4px;
   opacity: 0;
-  background: #d94f5c;
+  background: var(--color-main);
   -webkit-transform: scale3d(0, 1, 1);
   transform: scale3d(0, 1, 1);
   -webkit-transform-origin: 100% 50%;
@@ -985,7 +985,7 @@ export default {
 
   51% {
     opacity: 0;
-    color: #d94f5c;
+    color: var(--color-main);
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
   }
@@ -998,7 +998,7 @@ export default {
 
   100% {
     opacity: 1;
-    color: #d94f5c;
+    color: var(--color-main);
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
@@ -1014,7 +1014,7 @@ export default {
 
   51% {
     opacity: 0;
-    color: #d94f5c;
+    color: var(--color-main);
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
   }
@@ -1027,7 +1027,7 @@ export default {
 
   100% {
     opacity: 1;
-    color: #d94f5c;
+    color: var(--color-main);
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
@@ -1051,11 +1051,11 @@ export default {
 .menu--stephano .menu__link:hover,
 .menu--stephano .menu__link:focus {
   /* color: #929292; */
-  color: #d94f5c;
+  color: var(--color-main);
 }
 
 .menu--stephano .menu__item--current .menu__link {
-  color: #d94f5c;
+  color: var(--color-main);
 }
 
 .menu--stephano .menu__item::before,
@@ -1067,7 +1067,7 @@ export default {
   width: 10px;
   height: 2px;
   opacity: 0;
-  background: #d94f5c;
+  background: var(--color-main);
 }
 
 /* flipped sides */
@@ -1142,11 +1142,11 @@ export default {
 .menu--iris .menu__link:hover,
 .menu--iris .menu__link:focus {
   /* color: #929292; */
-  color: #d94f5c;
+  color: var(--color-main);
 }
 
 .menu--iris .menu__item--current .menu__link {
-  color: #d94f5c;
+  color: var(--color-main);
 }
 
 .menu--iris .menu__link::before,
@@ -1156,7 +1156,7 @@ export default {
   width: 10px;
   height: 10px;
   opacity: 0;
-  border: 2px solid #d94f5c;
+  border: 2px solid var(--color-main);
   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
   transition: transform 0.3s, opacity 0.3s;
   -webkit-transition-timing-function: cubic-bezier(0.17, 0.67, 0.05, 1.29);
@@ -1205,11 +1205,11 @@ export default {
 .menu--ceres .menu__link:hover,
 .menu--ceres .menu__link:focus {
   /* color: #929292; */
-  color: #d94f5c;
+  color: var(--color-main);
 }
 
 .menu--ceres .menu__item--current .menu__link {
-  color: #d94f5c;
+  color: var(--color-main);
 }
 
 .menu--ceres .menu__item::before,
@@ -1218,7 +1218,7 @@ export default {
   content: "";
   position: absolute;
   bottom: 0;
-  background: #d94f5c;
+  background: var(--color-main);
 }
 
 .menu--ceres .menu__item::before,
@@ -1291,11 +1291,11 @@ export default {
 .menu--juno .menu__link:hover,
 .menu--juno .menu__link:focus {
   /* color: #929292; */
-  color: #d94f5c;
+  color: var(--color-main);
 }
 
 .menu--juno .menu__item--current .menu__link {
-  color: #d94f5c;
+  color: var(--color-main);
 }
 
 .menu--juno .menu__item::before,
@@ -1306,7 +1306,7 @@ export default {
   position: absolute;
   pointer-events: none;
   opacity: 0;
-  background: #d94f5c;
+  background: var(--color-main);
   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
   transition: transform 0.3s, opacity 0.3s;
   -webkit-transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
@@ -1386,7 +1386,7 @@ export default {
   left: 0;
   width: 140%;
   height: 4px;
-  background: #d94f5c;
+  background: var(--color-main);
   -webkit-transform: rotate3d(0, 0, 1, -45deg) scale3d(0, 1, 1);
   transform: rotate3d(0, 0, 1, -45deg) scale3d(0, 1, 1);
   -webkit-transform-origin: 0 50%;
@@ -1410,7 +1410,7 @@ export default {
 .menu--maria .menu__link:hover,
 .menu--maria .menu__link:focus {
   /* color: #929292; */
-  color: #d94f5c;
+  color: var(--color-main);
 }
 
 .menu--maria .menu__item.menu__item--current .menu__link {
@@ -1436,11 +1436,11 @@ export default {
 .menu--valentine .menu__link:hover,
 .menu--valentine .menu__link:focus {
   /* color: #929292; */
-  color: #d94f5c;
+  color: var(--color-main);
 }
 
 .menu--valentine .menu__item--current .menu__link {
-  color: #d94f5c;
+  color: var(--color-main);
 }
 
 .menu--valentine .menu__item::before,
@@ -1449,7 +1449,7 @@ export default {
 .menu--valentine .menu__link::after {
   content: "";
   position: absolute;
-  background: #d94f5c;
+  background: var(--color-main);
   -webkit-transform-origin: 350% 350%;
   transform-origin: 350% 350%;
   -webkit-transition: -webkit-transform 0.5s;
@@ -1524,11 +1524,11 @@ export default {
 .menu--puck .menu__link:hover,
 .menu--puck .menu__link:focus {
   /* color: #929292; */
-  color: #d94f5c;
+  color: var(--color-main);
 }
 
 .menu--puck .menu__item--current .menu__link {
-  color: #d94f5c;
+  color: var(--color-main);
 }
 
 .menu--puck .menu__link::before,
@@ -1538,7 +1538,7 @@ export default {
   left: 0;
   width: 100%;
   height: 7px;
-  background: #d94f5c;
+  background: var(--color-main);
   -webkit-transform: scale3d(0, 1, 1);
   transform: scale3d(0, 1, 1);
   -webkit-transition: -webkit-transform 0.2s;
@@ -1583,11 +1583,11 @@ export default {
 .menu--titania .menu__link:hover,
 .menu--titania .menu__link:focus {
   /* color: #929292; */
-  color: #d94f5c;
+  color: var(--color-main);
 }
 
 .menu--titania .menu__item--current .menu__link {
-  color: #d94f5c;
+  color: var(--color-main);
   -webkit-transition: color 0.5s 0.2s;
   transition: color 0.5s 0.2s;
 }
@@ -1599,7 +1599,7 @@ export default {
   width: 120px;
   height: 100%;
   pointer-events: none;
-  border: 2px solid #d94f5c;
+  border: 2px solid var(--color-main);
   border-width: 2px 0;
   -webkit-transition: -webkit-transform 0.5s 0.2s;
   transition: transform 0.5s 0.2s;
@@ -1616,7 +1616,7 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  border: 2px solid #d94f5c;
+  border: 2px solid var(--color-main);
 
   /* vertical lines */
   border-width: 0 2px;

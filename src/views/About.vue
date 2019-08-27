@@ -5,23 +5,26 @@
       <!-- <div id="avatar"><img style="width:100%;height:100%;border-radius:50%" src="../assets/about/avatar.jpg" alt=""></div> -->
       <div style="height:18vh;"></div>
       <CircleHover id="circleHover"></CircleHover>
-      
+
       <div
         id="nickname"
         class="lax"
         data-lax-scale="(vh) 0.2, (vh*0.8) 1, (vh*0.2) 1, -elh 0.2"
         data-lax-anchor="self"
-      >Meizi<!-- 字体Monoton --></div>
+      >
+        Meizi
+        <!-- 字体Monoton -->
+      </div>
       <div
-        id="position"
+        id="job"
         class="lax"
         data-lax-scale="(vh) 0.2, (vh*0.8) 1, (vh*0.2) 1, -elh 0.2"
         data-lax-anchor="self"
-      >前端开发者</div>
+      >Front-end web development</div>
       <div>
         <div id="introduce" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">
-          heloe asskasjka akjskasjk aksjk
-          <br />asas as adsfggd sfsf hfyrtygxvx
+          In the future,
+          <br />I can develop a neon-style UI component library.
         </div>
         <div
           id="down"
@@ -41,11 +44,64 @@
       </div>
     </div>
     <div id="project">
+      <div id="video-wrap" class="demo-4" ref="overlay">
+        <div class="hamburger" @click="closeVideo" style="display:none;" ref="hamburger">
+          <div class="hamburger__line hamburger__line--cross01">
+            <div class="hamburger__line-in hamburger__line-in--cross01 hamburger__line-in--demo-4"></div>
+          </div>
+          <div class="hamburger__line hamburger__line--cross02">
+            <div class="hamburger__line-in hamburger__line-in--cross02 hamburger__line-in--demo-4"></div>
+          </div>
+        </div>
+        <div class="global-menu">
+          <div id="video" ref="video">
+            <video controls>
+              <source src="../assets/about/bookshop.mp4" type="video/mp4" />
+            </video>
+            <div>
+              <!-- sth here -->
+              123
+            </div>
+          </div>
+        </div>
+        <svg
+          ref="closeSvg"
+          class="shape-overlays"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+        >
+          <path class="shape-overlays__path" />
+          <path class="shape-overlays__path" />
+        </svg>
+      </div>
+
       <div class="grid">
         <div class="grid__item theme-1">
           <div class="grid__item-content">
             <nav class="grid__item-nav"></nav>
             <h2 class="grid__item-title grid__item-title--small">Bookshop</h2>
+            <p
+              data-aos="fade-up"
+              data-aos-anchor-placement="bottom"
+              data-aos-easing="ease"
+              data-aos-delay="400"
+              class="aboutBaseFont mobileText"
+            >
+              前端基于
+              <CopyText content="Vue.js" animationName="rubberBand"></CopyText>框架，使用 vuex 实现多页面间的数据传输，
+              axios 与后端进行数据交互，搭配elementUI ，ivew等开源组件库。
+              <br />后端基于
+              <CopyText content="Spring+SpringMVC+Mybatis" animationName="rubberBand"></CopyText>整合框架。用户密码使用MD5加密，评论敏感词过滤，session 保持购物车数据 。
+              <br />
+              <br />
+              <a
+                href="https://github.com/meiziRain/Bookshop-frontEnd"
+                target="blank"
+                style="outline:none;color:black;"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </p>
           </div>
         </div>
         <div class="grid__item grid__item--bg theme-2">
@@ -53,8 +109,8 @@
           <div
             class="grid__item-img"
             :data-displacement="projectImg.displacement8"
-            :data-cover="projectImg.img21"
-            :data-back="projectImg.img22"
+            :data-cover="projectImg.book"
+            :data-back="projectImg.bookshop"
             data-intensity="-0.65"
             data-speed-in="1.2"
             data-speed-out="1.2"
@@ -62,12 +118,22 @@
             <!-- <img class="distortionImg" src="../assets/about/project/Img21.jpg" alt="Image" />
             <img class="distortionImg" src="../assets/about/project/Img22.jpg" alt="Image" />-->
           </div>
-          <div class="grid__item-content">
-            <span class="grid__item-meta">California</span>
-            <h2 class="grid__item-title">Jumping Around</h2>
+          <!-- FIXME: 对于distortion.js有hover效果的必须添加 pointer-events: none; 不添加没有hover效果，添加后自定义的 <CopyText>又给屏蔽了。 -->
+          <div class="grid__item-content" style="	pointer-events: none;">
+            <span class="grid__item-meta">
+              <i class="fab fa-chrome" style="font-size: 2.5em;"></i>
+            </span>
+            <h2 class="grid__item-title">Clean UI</h2>
             <h3 class="grid__item-subtitle">
-              <span>California's last empty jump spots</span>
-              <a class="grid__item-link" href="#">Discover more</a>
+              <span>flexible layout,interactive design</span>
+              <br />
+              <br />
+              <br />
+              <a
+                class="grid__item-link"
+                style="font-size:1.2em;color:var(--color-main);"
+                @click="openVideo()"
+              >&larr;Discover more</a>
             </h3>
           </div>
         </div>
@@ -80,44 +146,48 @@
             data-intensity="0.2"
             data-speed-in="1.6"
             data-speed-out="1.6"
-          >
-            <!-- <img class="distortionImg" src="../assets/about/project/Img21.jpg" alt="Image" />
-            <img class="distortionImg" src="../assets/about/project/Img22.jpg" alt="Image" />-->
-          </div>
-          <div class="grid__item-content">
-            <span class="grid__item-meta">Italy</span>
-            <h2 class="grid__item-title">Calm Serenity</h2>
+          ></div>
+          <div class="grid__item-content" style="	pointer-events: none;">
+            <span class="grid__item-meta">
+              <i class="fab fa-android" style="font-size: 2.5em;color:rgb(0, 133, 119);"></i>
+            </span>
+            <h2 class="grid__item-title">Gold Abacus</h2>
             <h3 class="grid__item-subtitle">
-              <span>Italy's secret meadows and fields</span>
-              <a class="grid__item-link" href="#">Check them out</a>
+              <span>A simple android app</span>
             </h3>
           </div>
         </div>
-        <div class="grid__item theme-4">
+        <div class="grid__item theme-4" style="color:white;">
           <div class="grid__item-content">
-            <nav class="grid__item-nav">
+            <!-- <nav class="grid__item-nav">
               <a href="#" class="grid__item-link">About</a>
               <a href="#" class="grid__item-link">Blog</a>
               <a href="#" class="grid__item-link">Membership</a>
-            </nav>
-            <h2 class="grid__item-title grid__item-title--small">Qualm Inspiration for Everybody</h2>
-            <p
-              class="grid__item-text"
-            >Muse about, something incredible is waiting to be known, courage of our questions tesseract hearts of the stars great turbulent clouds the only home.</p>
+            </nav>-->
+            <h2 class="grid__item-title grid__item-title--small">More accurate and faster</h2>基于
+            <CopyText content="Java" animationName="rubberBand"></CopyText>的Android APP
+            涉及APP权限申请，邮件收发，文件解压缩，文件读写。
+            <CopyText content="SQLite" animationName="rubberBand"></CopyText>数据库。
+            <br />
+            <br />
+            <li>服务于事器材租赁业相关人员，解决了人工计算租金繁琐，出错率高，效率低下等问题</li>
+            <br />
+            <li>补足PC客户端无法随时随地查看租金详情的缺陷。</li>
+            <br />
+            <li>降低人工成本。</li>
+            <br>
             <a href="#" class="grid__item-link">Read more</a>
           </div>
         </div>
         <div class="grid__item theme-5">
           <div class="grid__item-content">
             <nav class="grid__item-nav">
-              <a href="#" class="grid__item-link">Getting there</a>
-              <a href="#" class="grid__item-link">Accomodation</a>
+              <a class="grid__item-link">微信服务号</a>
             </nav>
-            <h2 class="grid__item-title grid__item-title--small">Bangkok's Hidden Foodstalls</h2>
-            <p
-              class="grid__item-text"
-            >Tingling of the spine, network of wormholes preserve and cherish that pale blue dot cosmic ocean encyclopaedia galactica.</p>
-            <a href="#" class="grid__item-link">Read more</a>
+            <h2 class="grid__item-title grid__item-title--small">海口云医社</h2>
+            <p class="grid__item-text">足不出户也能享受的医疗服务.</p>
+            <br />
+            <p>扫描二维码了解更多。</p>
           </div>
         </div>
         <div class="grid__item grid__item--bg theme-6">
@@ -129,19 +199,28 @@
             data-speed-out="0.3"
             data-easing="Sine.easeOut"
           >
-            <!-- <img class="distortionImg" src="../assets/about/project/Img21.jpg" alt="Image" />
-            <img class="distortionImg" src="../assets/about/project/Img22.jpg" alt="Image" />-->
+            <img class="qrCodeImg" src="../assets/about/qrCode.png" alt="Image" />
           </div>
-          <div class="grid__item-content">
-            <span class="grid__item-meta">Sweden</span>
-            <h2 class="grid__item-title">Build it forever</h2>
+          <div class="grid__item-content" style="	pointer-events: none;">
+            <span class="grid__item-meta">
+              <i class="fab fa-weixin" style="font-size: 2.5em;color:rgb(0, 173, 25);"></i>
+            </span>
+            <!-- <h2 class="grid__item-title">Build it forever</h2> -->
             <h3 class="grid__item-subtitle">
-              <span>Sweden's famous furniture</span>
-              <a class="grid__item-link" href="#">Discover more</a>
+              <!-- <span>Sweden's famous furniture</span> -->
+              <a
+                class="grid__item-link"
+                href="#"
+                style="margin-top:90%;color:var(--color-main)"
+              >Discover more</a>
             </h3>
           </div>
         </div>
       </div>
+    </div>
+    <div id="about-bottom">
+      <div id="about-bottom-left">你好</div>
+      <div id="about-bottom-right">再见</div>
     </div>
   </div>
 </template>
@@ -171,6 +250,9 @@ import hoverEffect from "hover-effect";
 import AOS from "aos"; //滚动动效
 import "aos/dist/aos.css";
 
+//遮罩
+import { ease, ShapeOverlays } from "@/assets/about/project/easings.js";
+
 export default {
   name: "about",
   components: {
@@ -184,14 +266,17 @@ export default {
   data() {
     return {
       // 向子组件传递图片地址需要将图片模块导入，ES6 为 import ， common.js 为  require 。
-      bookshopIndex: require("../assets/about/bookshop-index.jpg"),
+      aboutPageTimeOut: 0,
+      elmOverlay: [],
+      elmHamburger: [],
+      overlay: [],
       projectImg: {
         displacement8: require("../assets/about/project/displacement/8.jpg"),
-        img21: require("../assets/about/project/img22.jpg"),
-        img22: require("../assets/about/project/img21.jpg"),
-        gold:require("../assets/about/project/gold_cover.png"),
-        gold4:require("../assets/about/project/gold4.png"),
-        displacement1: require("../assets/about/project/displacement/1.jpg"),
+        book: require("../assets/about/project/bookshop-cover.png"),
+        bookshop: require("../assets/about/project/bookshop1.png"),
+        gold: require("../assets/about/project/gold_cover.png"),
+        gold4: require("../assets/about/project/gold4.png"),
+        displacement1: require("../assets/about/project/displacement/1.jpg")
       },
       slickOptions: {
         slidesToShow: 1,
@@ -216,21 +301,64 @@ export default {
     this.initLaxJS();
 
     //hover.js渲染
-    Array.from(document.querySelectorAll(".grid__item-img")).forEach(el => {
-      const imgs = Array.from(el.querySelectorAll(".distortionImg"));
-      new hoverEffect({
-        parent: el,
-        intensity: "-0.1",
-        speedIn: "0.4",
-        speedOut: "0.4",
-        easing: "power2.easeInOut",
-        image1: el.dataset.cover,
-        image2: el.dataset.back,
-        displacementImage: el.dataset.displacement
-      });
-    });
+    this.distort();
+
+    //
+    this.elmHamburger = document.querySelector(".hamburger");
+    this.elmOverlay = document.querySelector(".shape-overlays");
+    this.overlay = new ShapeOverlays(this.elmOverlay);
   },
   methods: {
+    // http://www.htmleaf.com/html5/SVG/201710184785.html
+    // handleVideoPage()  openVideo()  closeVideo()
+    handleVideoPage() {
+      if (this.overlay.isAnimating) {
+        return false;
+      }
+      this.overlay.toggle();
+      if (this.overlay.isOpened === true) {
+        this.elmHamburger.classList.add("is-opened-navi");
+        // FIXME:  video属性更改必须等上面的加载完， 未知原因，此处延时后可以出效果
+        this.aboutPageTimeOut = setTimeout(() => {
+          this.$refs.video.classList.add("is-opened");
+        }, 100);
+
+        // FIXME:  防止快速点击动画交替错乱。
+        this.aboutPageTimeOut = setTimeout(() => {
+          this.$refs.hamburger.style.display = "block";
+        }, 1000);
+      } else {
+        this.$refs.video.classList.remove("is-opened");
+        this.elmHamburger.classList.remove("is-opened-navi");
+      }
+    },
+    openVideo() {
+      //渲染
+      this.$refs.overlay.style.display = "block";
+      this.handleVideoPage();
+    },
+    closeVideo() {
+      this.handleVideoPage();
+      this.$refs.hamburger.style.display = "none";
+      this.aboutPageTimeOut = setTimeout(() => {
+        this.$refs.overlay.style.display = "none";
+      }, 800);
+    },
+    distort() {
+      Array.from(document.querySelectorAll(".grid__item-img")).forEach(el => {
+        const imgs = Array.from(el.querySelectorAll(".distortionImg"));
+        new hoverEffect({
+          parent: el,
+          intensity: "-0.1",
+          speedIn: "0.4",
+          speedOut: "0.4",
+          easing: "power2.easeInOut",
+          image1: el.dataset.cover,
+          image2: el.dataset.back,
+          displacementImage: el.dataset.displacement
+        });
+      });
+    },
     initLaxJS() {
       window.onload = function() {
         lax.setup(); // init
@@ -280,12 +408,81 @@ export default {
         this.$refs.slick.reSlick();
       });
     }
+  },
+  beforeDestroy() {
+    clearInterval(this.aboutPageTimeOut);
   }
 };
 </script>
 
 <style scoped>
 @import "../assets/about/distortion.css";
+@import "../assets/about/project/ham.css";
+.qrCodeImg {
+  width: 60%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#video-wrap {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0px;
+  /* 高于iris组件 */
+  z-index: 999;
+  top: 0px;
+}
+#video {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  /* 必须要加 */
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(-200%);
+  transition: transform 1s, opacity 1s !important;
+  transition-timing-function: ease-in;
+}
+video {
+  width: 80vw;
+  height: auto;
+  box-shadow: -5px 5px 20px #a3a3a3;
+  transform: translate(10%, 10%);
+}
+video:focus {
+  outline: none;
+}
+.is-opened {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition-timing-function: ease !important;
+}
+#about-bottom {
+  width: 100vw;
+  height: 40vh;
+}
+#about-bottom-left {
+  color: white;
+  float: left;
+  width: 50%;
+  text-align: right;
+  line-height: 40vh;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+}
+#about-bottom-right {
+  color: black;
+  float: right;
+  width: 50%;
+  text-align: left;
+  line-height: 40vh;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
 .docCloud {
   margin-top: 5%;
   margin-left: 5%;
@@ -310,9 +507,6 @@ export default {
 }
 .slick-slide {
   width: none !important;
-}
-video:focus {
-  outline: none;
 }
 #about {
   /* 内容大于屏幕即要这样？ */
@@ -343,13 +537,12 @@ video:focus {
   margin-left: auto;
   margin-right: auto;
 }
-#position {
+#job {
   color: #999;
   text-align: center;
   padding: 1.2em;
 }
 #introduce {
-  width: 20rem;
   word-break: break-word;
   line-height: 1.75;
   font-weight: 600;
@@ -360,16 +553,15 @@ video:focus {
 }
 #down {
   text-align: center;
-  color: #d94f5c;
+  color: var(--color-main);
   -webkit-animation: pulse 2s infinite;
   animation: pulse 2s infinite;
 }
 .fa-github {
   font-size: 2.5em;
-  cursor: pointer;
 }
 .fa-github:hover {
-  color: #d94f5c;
+  color: var(--color-main);
 }
 .aboutBaseFont {
   word-break: break-word;
@@ -460,6 +652,18 @@ video:focus {
   #nickname {
     font-weight: 300;
     font-size: 3em;
+  }
+}
+@media screen and (max-width: 700px) {
+  video {
+    width: 100vw;
+    transform: translate(0, 40%);
+  }
+}
+@media screen and (max-width: 400px) {
+  video {
+    width: 100vw;
+    transform: translate(0, 100%);
   }
 }
 </style>

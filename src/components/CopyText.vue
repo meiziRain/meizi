@@ -35,8 +35,8 @@ export default {
   },
   methods: {
     handleAnimate(e) {
-      console.log(e.target)
-      console.log(e.currentTarget)
+      console.log(e.target);
+      console.log(e.currentTarget);
       //copy 文本事件绑定
       e.target.setAttribute("aria-label", "Copied");
       this.animateCSS(e.target, this.animationName, () => {
@@ -62,4 +62,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.text {
+  /* animate.css  必须是block 或者inline-block ，动画才能生效。 */
+  display: inline-block;
+  padding: 2px 4px;
+  color: var(--color-main);;
+  cursor: pointer;
+}
 </style>
