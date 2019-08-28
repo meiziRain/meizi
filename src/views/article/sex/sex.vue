@@ -1,214 +1,285 @@
+
+
 <template>
+  <!-- https://github.com/codrops/ImageTrailEffects/ -->
   <div id="sex">
-    <div id="project-item-1">
-      <!-- COIDEA:demo:header START -->
-      <header>
-        <nav class="navigation">
-          <li>
-            <svg
-              version="1.1"
-              id="Capa_1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              viewBox="0 0 54 54"
-              style="enable-background:new 0 0 54 54;"
-              xml:space="preserve"
-            >
-              <circle cx="7" cy="47" r="4" />
-              <circle cx="27" cy="47" r="4" class="circle" />
-              <circle cx="47" cy="47" r="4" />
-              <circle cx="7" cy="27" r="4" class="circle" />
-              <circle cx="27" cy="27" r="4" />
-              <circle cx="47" cy="27" r="4" class="circle" />
-              <circle cx="7" cy="7" r="4" />
-              <circle cx="27" cy="7" r="4" class="circle" />
-              <circle cx="47" cy="7" r="4" />
-              <g />
-              <g />
-              <g />
-              <g />
-              <g />
-              <g />
-              <g />
-              <g />
-              <g />
-              <g />
-              <g />
-              <g />
-              <g />
-              <g />
-              <g />
-            </svg>
-          </li>
-        </nav>
-
-        <nav class="main">
-          <li>
-            <a href="http://www.htmleaf.com/jQuery/Layout-Interface/201903185568.html">article</a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/COIDEAwebsite/slideshow-with-fullscreen-detail-view"
-              target="_blank"
-            >Github</a>
-          </li>
-        </nav>
-      </header>
-      <!-- COIDEA:demo:header END -->
-
-      <!-- COIDEA:demo:slider START -->
-      <section class="coidea-slider">
-        <!-- COIDEA:animation:helpers START -->
-        <div class="slider-helpers">
-          <div class="arrea black-arrea"></div>
-          <div class="arrea white-arrea"></div>
-        </div>
-        <!-- COIDEA:animation:helpers END -->
-
-        <!-- COIDEA:slider:holder START -->
-        <div class="slider-holder">
-          <!-- COIDEA:slider START -->
-          <div class="slider">
-            <!-- COIDEA:slider:item START -->
-            <div
-              id="slider-item-1"
-              class="slider-item"
-              style="background-image: url(../assets/about/img-1.jpg);"
-              data-id="1"
-              data-headline="Renee Johnson"
-              data-description="Look and feel client-facing usability follow up. Affiliate marketing prototype look and feel ROI flesh out. Target audience lean organic tweak CTA. Reach internally affiliate marketing ecosystem mission statement lead generation implementation. Ecosystem lead generation value-add hackathon ecosystem optimize follow up onboarding."
-            ></div>
-            <!-- COIDEA:slider:item END -->
-
-            <!-- COIDEA:slider:item START -->
-            <div
-              id="slider-item-2"
-              class="slider-item"
-              style="background-image: url(../assets/about/img-2.jpg);"
-              data-id="2"
-              data-headline="Logan Boyd"
-              data-description="Conversion mission statement client-facing transparent post launch in the queue hackathon. Credentials OLA ETA follow up innovation mobile-first scope out mission statement credentials. B2B push the envelope plow through take a stab at it segment. Game changer proximity regroup value proposition mobile-first reach proximity."
-            ></div>
-            <!-- COIDEA:slider:item END -->
-
-            <!-- COIDEA:slider:item START -->
-            <div
-              id="slider-item-3"
-              class="slider-item"
-              style="background-image: url(../assets/about/img-3.jpg);"
-              data-id="3"
-              data-headline="Leona Day"
-              data-description="Good fit ramp up usability transparent prototype traction heads down fluid innovation. Good fit value creation flesh out discovery transparent CTA tweak . OLA deliverables scope out proposed usability game changer pipeline ramp up. Credentials mission statement reach discovery flesh out usability internally ROI. Fluid mock up user persona value creation."
-            ></div>
-            <!-- COIDEA:slider:item END -->
-
-            <!-- COIDEA:slider:item START -->
-            <div
-              id="slider-item-4"
-              class="slider-item"
-              style="background-image: url(../assets/about/img-4.jpg);"
-              data-id="4"
-              data-headline="Linda Young"
-              data-description="SEO retainer optimize tweak. Discovery third party game plan strategic partners scope out API post launch tackle it. Deliverables hackathon functionality strategic partners copy deck fluid. Value-add third party next level whiteboard scope out kick-off hackathon look and feel."
-            ></div>
-            <!-- COIDEA:slider:item END -->
-
-            <!-- COIDEA:slider:item START -->
-            <div
-              id="slider-item-5"
-              class="slider-item"
-              style="background-image: url(../assets/about/img-5.jpg);"
-              data-id="5"
-              data-headline="Katrina Steward"
-              data-description="Ramp up lean target audience dynamic look and feel innovation kick-off implementation retainer. Optimize heads down onboarding segment. Retainer good fit tweak affiliate marketing value proposition. Ecosystem organic cross platform regroup ramp up scope out ETA dev environment. Plow through prototype streamline consolidate ROI third party lead generation reach. Dynamic functionality game plan follow up copy deck value-add usability deliverables."
-            ></div>
-            <!-- COIDEA:slider:item END -->
-
-            <!-- COIDEA:slider:item START -->
-            <div
-              id="slider-item-6"
-              class="slider-item"
-              style="background-image: url(../assets/about/img-6.jpg);"
-              data-id="6"
-              data-headline="Jessie Larson"
-              data-description="SEO retainer optimize tweak. Discovery third party game plan strategic partners scope out API post launch tackle it. Deliverables hackathon functionality strategic partners copy deck fluid. Value-add third party next level whiteboard scope out kick-off hackathon look and feel."
-            ></div>
-            <!-- COIDEA:slider:item END -->
-          </div>
-          <!-- COIDEA:slider END -->
-
-          <!-- COIDEA:slider:navigation START -->
-          <div class="slider-nav">
-            <span class="slider-nav-btn go-next">
-              <img src="./icon-arrow-top.png" />
-            </span>
-            <span class="slider-nav-length"></span>
-            <span class="slider-nav-progress">
-              <span class="progress"></span>
-            </span>
-            <span class="slider-nav-index">1</span>
-
-            <!-- if needed, uncomment this part for prev button - IMPORTANT: styling is not applied to this button!!! -->
-            <!-- <div class="slider-nav-btn go-prev">Prev</div> -->
-          </div>
-          <!-- COIDEA:slider:navigation END -->
-        </div>
-        <!-- COIDEA:slider:holder END -->
-
-        <!-- COIDEA:page:content START -->
-        <div class="slider-content">
-          <div class="slider-content-inner">
-            <span class="subheadline">fiction</span>
-            <h1>Our Story</h1>
-            <p>We inspire more people to read more, encourage them to share their enjoyment of reading and celebrate the difference that reading makes.</p>
-            <a href="#">Read the full Story</a>
-          </div>
-        </div>
-        <!-- COIDEA:page:content END -->
-      </section>
-      <!-- COIDEA:demo:slider END -->
-
-      <!-- COIDEA:page:modal START -->
-      <div class="coidea-modal">
-        <!-- COIDEA:page:modal:helper START -->
-        <div class="arrea black-arrea"></div>
-        <!-- COIDEA:page:modal:helper START -->
-
-        <!-- COIDEA:page:modal:video START -->
-        <div class="video-holder">
-          <video playsinline autoplay="autoplay" muted loop poster>
-            <source type="video/mp4" class="mp4" src="./background.mp4" />
-            <!-- <source type="video/webm" class="webm" src="assets/video/background.webm"> -->
-          </video>
-        </div>
-        <!-- COIDEA:page:modal:video END -->
-
-        <!-- COIDEA:page:modal:content START -->
-        <div class="coidea-modal-inner">
-          <h2></h2>
-          <div class="modal-content"></div>
-        </div>
-        <!-- COIDEA:page:modal:content END -->
-      </div>
-      <!-- COIDEA:page:modal END -->
+    <div class="sex-content" ref="content">
+      <img class="content__img" src="./imgs/pornhub-1.png" alt="Some image" />
+      <img class="content__img" src="./imgs/idea.jpg" alt="Some image" />
+      <img class="content__img" src="./imgs/PetiteAlexis-1.jpg" alt="Some image" />
+      <img class="content__img" src="./imgs/PetiteAlexis-2.jpg" alt="Some image" />
+      <img class="content__img" src="./imgs/PetiteAlexis-3.png" alt="Some image" />
+      <img class="content__img" src="./imgs/PetiteAlexis-8.jpg" alt="Some image" />
+      <h3 class="content__title">Some beautiful bodies</h3>
     </div>
+    <!--/content-->
   </div>
 </template>
 
 <script>
-import { videoPlayer } from "./videoPlayer";
+// @ is an alias to /src
+
 export default {
   name: "sex",
+  components: {},
   mounted() {
-    videoPlayer();
+    this.initImg();
   },
-  methods: {}
+  methods: {
+    initImg() {
+      // body element
+      const body = document.body;
+
+      // helper functions
+      const MathUtils = {
+        // linear interpolation
+        lerp: (a, b, n) => (1 - n) * a + n * b,
+        // distance between two points
+        distance: (x1, y1, x2, y2) => Math.hypot(x2 - x1, y2 - y1)
+      };
+
+      // get the mouse position
+      const getMousePos = ev => {
+        let posx = 0;
+        let posy = 0;
+        if (!ev) ev = window.event;
+        if (ev.pageX || ev.pageY) {
+          posx = ev.pageX;
+          posy = ev.pageY;
+        } else if (ev.clientX || ev.clientY) {
+          posx = ev.clientX + body.scrollLeft + docEl.scrollLeft;
+          posy = ev.clientY + body.scrollTop + docEl.scrollTop;
+        }
+        return { x: posx, y: posy };
+      };
+
+      // mousePos: current mouse position
+      // cacheMousePos: previous mouse position
+      // lastMousePos: last last recorded mouse position (at the time the last image was shown)
+      let lastMousePos, cacheMousePos;
+      let mousePos = (lastMousePos = cacheMousePos = { x: 0, y: 0 });
+
+      // update the mouse position
+      window.addEventListener("mousemove", ev => (mousePos = getMousePos(ev)));
+
+      // gets the distance from the current mouse position to the last recorded mouse position
+      const getMouseDistance = () =>
+        MathUtils.distance(
+          mousePos.x,
+          mousePos.y,
+          lastMousePos.x,
+          lastMousePos.y
+        );
+
+      class Image {
+        constructor(el) {
+          this.DOM = { el: el };
+          // image deafult styles
+          this.defaultStyle = {
+            x: 0,
+            y: 0,
+            opacity: 0
+          };
+          // get sizes/position
+          this.getRect();
+          // init/bind events
+          this.initEvents();
+        }
+        initEvents() {
+          // on resize get updated sizes/position
+          window.addEventListener("resize", () => this.resize());
+        }
+        resize() {
+          // reset styles
+          TweenMax.set(this.DOM.el, this.defaultStyle);
+          // get sizes/position
+          this.getRect();
+        }
+        getRect() {
+          this.rect = this.DOM.el.getBoundingClientRect();
+        }
+        isActive() {
+          // check if image is animating or if it's visible
+          return (
+            TweenMax.isTweening(this.DOM.el) || this.DOM.el.style.opacity != 0
+          );
+        }
+      }
+
+      class ImageTrail {
+        constructor() {
+          // images container
+          this.DOM = { content: document.querySelector(".sex-content") };
+          // array of Image objs, one per image element
+          this.images = [];
+          [...this.DOM.content.querySelectorAll("img")].forEach(img =>
+            this.images.push(new Image(img))
+          );
+          // total number of images
+          this.imagesTotal = this.images.length;
+          // upcoming image index
+          this.imgPosition = 0;
+          // zIndex value to apply to the upcoming image
+          this.zIndexVal = 1;
+          // mouse distance required to show the next image
+          this.threshold = 100;
+          // render the images
+          requestAnimationFrame(() => this.render());
+        }
+        render() {
+          // get distance between the current mouse position and the position of the previous image
+          let distance = getMouseDistance();
+          // cache previous mouse position
+          cacheMousePos.x = MathUtils.lerp(
+            cacheMousePos.x || mousePos.x,
+            mousePos.x,
+            0.1
+          );
+          cacheMousePos.y = MathUtils.lerp(
+            cacheMousePos.y || mousePos.y,
+            mousePos.y,
+            0.1
+          );
+
+          // if the mouse moved more than [this.threshold] then show the next image
+          if (distance > this.threshold) {
+            this.showNextImage();
+
+            ++this.zIndexVal;
+            this.imgPosition =
+              this.imgPosition < this.imagesTotal - 1
+                ? this.imgPosition + 1
+                : 0;
+
+            lastMousePos = mousePos;
+          }
+
+          // check when mousemove stops and all images are inactive (not visible and not animating)
+          let isIdle = true;
+          for (let img of this.images) {
+            if (img.isActive()) {
+              isIdle = false;
+              break;
+            }
+          }
+          // reset z-index initial value
+          if (isIdle && this.zIndexVal !== 1) {
+            this.zIndexVal = 1;
+          }
+
+          // loop..
+          requestAnimationFrame(() => this.render());
+        }
+        showNextImage() {
+          // show image at position [this.imgPosition]
+          const img = this.images[this.imgPosition];
+          // kill any tween on the image
+          TweenMax.killTweensOf(img.DOM.el);
+
+          new TimelineMax()
+            // show the image
+            .set(
+              img.DOM.el,
+              {
+                startAt: { opacity: 0 },
+                opacity: 1,
+                scale: 1,
+                zIndex: this.zIndexVal,
+                x: cacheMousePos.x - img.rect.width / 2,
+                y: cacheMousePos.y - img.rect.height / 2
+              },
+              0
+            )
+            // animate position
+            .to(
+              img.DOM.el,
+              1.8,
+              {
+                ease: Expo.easeOut,
+                x: mousePos.x - img.rect.width / 2,
+                y: mousePos.y - img.rect.height / 2
+              },
+              0
+            )
+            // then make it disappear
+            .to(
+              img.DOM.el,
+              0.8,
+              {
+                ease: Power1.easeOut,
+                opacity: 0
+              },
+              0.8
+            )
+            // scale down the image
+            .to(
+              img.DOM.el,
+              0.8,
+              {
+                ease: Quint.easeInOut,
+                scale: 2
+              },
+              0.8
+            );
+        }
+      }
+      new ImageTrail();
+    }
+  }
 };
 </script>
 
-
 <style scoped>
-@import "./videoPlayer.css";
+#sex {
+  position: absolute;
+  z-index: 99;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  --color-title: #232323;
+  --img-maxwidth: 400px;
+  --blendmode-title: difference;
+  --filter-img: none;
+}
+.sex-content {
+  height: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  isolation: isolate;
+}
+.content__title {
+  font-family: forma-djr-display, sans-serif;
+  font-weight: 700;
+  position: relative;
+  z-index: 10000;
+  font-size: 5vw;
+  mix-blend-mode: var(--blendmode-title);
+  -webkit-text-stroke: 2px var(--color-title);
+  text-stroke: 2px var(--color-title);
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  color: transparent;
+  pointer-events: none;
+}
+
+.content__img {
+  max-width: var(--img-maxwidth);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  will-change: transform;
+  filter: var(--filter-img);
+}
+
+.content__img--full {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
 </style>
+
+

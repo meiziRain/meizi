@@ -1,8 +1,5 @@
 /* 遮罩样式    http://www.htmleaf.com/Demo/201710184786.html */
 .demo-4 {
-	--color-text: #c04444;
-	--color-bg: #333;
-	--color-link: #2d2c2b;
 	--color-link-hover: #c14343;
 	--color-info: #fff;
 	--color-main-bg: #ece7de;
@@ -381,12 +378,6 @@
 }
 
 @media screen and (max-width: 55em) {
-	html,
-	body {
-		overflow-x: hidden;
-		width: 100vw;
-		height: 100%;
-	}
 	.hamburger {
 		position: fixed;
 		top: 0.5em;

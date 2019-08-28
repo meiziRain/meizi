@@ -30,7 +30,7 @@ export default {
   data() {
     return {
       currentindex: 0,
-
+      ways:["home","blog","studio","daily","about"],
       menu: [
         "sebastian",
         "prospero",
@@ -48,7 +48,7 @@ export default {
     };
   },
   created() {
-    this.keepNavRender = this.keepNavRender.bind(this); 
+    this.keepNavRender = this.keepNavRender.bind(this);
   },
   mounted() {
     let me = this;
@@ -70,31 +70,15 @@ export default {
       menu.className = "menu menu--" + me.menu[current];
     },
 
-
-    keepNavRender(){
-      let me =this;
+    keepNavRender() {
+      let me = this;
       console.log(me.$route.path);
-      switch (me.$route.path.substring(1)) {
-        case "home":
-          me.currentindex = 0;
-          break;
-        case "blog":
-          me.currentindex = 1;
-          break;
-        case "studio":
-          me.currentindex = 2;
-          break;
-        case "daily":
-          me.currentindex = 3;
-          break;
-        case "about":
-          me.currentindex = 4;
-          break;
-        case "blog/youth":
-          me.currentindex = 1;
-          break;
-        default:
-          console.log("no matching");
+      let path = me.$route.path;
+      for (let i in this.ways) {
+        if (path.indexOf(this.ways[i])>-1) {
+          console.log(i);
+          this.currentindex=i;
+        }
       }
     },
 

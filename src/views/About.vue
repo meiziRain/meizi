@@ -23,8 +23,7 @@
       >Front-end web development</div>
       <div>
         <div id="introduce" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">
-          In the future,
-          <br />I can develop a neon-style UI component library.
+          <br />Will have a neon-style UI component library?
         </div>
         <div
           id="down"
@@ -60,7 +59,6 @@
             </video>
             <div>
               <!-- sth here -->
-              123
             </div>
           </div>
         </div>
@@ -76,7 +74,7 @@
       </div>
 
       <div class="grid">
-        <div class="grid__item theme-1">
+        <div class="grid__item theme-1" style="color:white;">
           <div class="grid__item-content">
             <nav class="grid__item-nav"></nav>
             <h2 class="grid__item-title grid__item-title--small">Bookshop</h2>
@@ -97,7 +95,7 @@
               <a
                 href="https://github.com/meiziRain/Bookshop-frontEnd"
                 target="blank"
-                style="outline:none;color:black;"
+                style="outline:none;"
               >
                 <i class="fab fa-github"></i>
               </a>
@@ -157,26 +155,34 @@
             </h3>
           </div>
         </div>
-        <div class="grid__item theme-4" style="color:white;">
+        <div class="grid__item theme-4" style="color:black;">
           <div class="grid__item-content">
             <!-- <nav class="grid__item-nav">
               <a href="#" class="grid__item-link">About</a>
               <a href="#" class="grid__item-link">Blog</a>
               <a href="#" class="grid__item-link">Membership</a>
             </nav>-->
-            <h2 class="grid__item-title grid__item-title--small">More accurate and faster</h2>基于
-            <CopyText content="Java" animationName="rubberBand"></CopyText>的Android APP
-            涉及APP权限申请，邮件收发，文件解压缩，文件读写。
-            <CopyText content="SQLite" animationName="rubberBand"></CopyText>数据库。
-            <br />
-            <br />
-            <li>服务于事器材租赁业相关人员，解决了人工计算租金繁琐，出错率高，效率低下等问题</li>
-            <br />
-            <li>补足PC客户端无法随时随地查看租金详情的缺陷。</li>
-            <br />
-            <li>降低人工成本。</li>
-            <br>
-            <a href="#" class="grid__item-link">Read more</a>
+            <h2 class="grid__item-title grid__item-title--small">More accurate and faster</h2>
+            <div
+              data-aos="fade-up"
+              data-aos-anchor-placement="bottom"
+              data-aos-easing="ease"
+              data-aos-delay="400"
+            >
+              基于
+              <CopyText content="Java" animationName="rubberBand"></CopyText>的Android APP
+              涉及APP权限申请，邮件收发，文件解压缩，文件读写。
+              <CopyText content="SQLite" animationName="rubberBand"></CopyText>数据库。
+              <br />
+              <br />
+              <li>服务于事器材租赁业相关人员，解决了人工计算租金繁琐，出错率高，效率低下等问题</li>
+              <br />
+              <li>补足PC客户端无法随时随地查看租金详情的缺陷。</li>
+              <br />
+              <li>降低人工成本。</li>
+              <br />
+              <a href="#" class="grid__item-link">Read more</a>
+            </div>
           </div>
         </div>
         <div class="grid__item theme-5">
@@ -184,10 +190,17 @@
             <nav class="grid__item-nav">
               <a class="grid__item-link">微信服务号</a>
             </nav>
-            <h2 class="grid__item-title grid__item-title--small">海口云医社</h2>
-            <p class="grid__item-text">足不出户也能享受的医疗服务.</p>
-            <br />
-            <p>扫描二维码了解更多。</p>
+            <div
+              data-aos="fade-up"
+              data-aos-anchor-placement="bottom"
+              data-aos-easing="ease"
+              data-aos-delay="400"
+            >
+              <h2 class="grid__item-title grid__item-title--small">海口云医社</h2>
+              <p class="grid__item-text">足不出户也能享受的医疗服务.</p>
+              <br />
+              <p>扫描二维码了解更多。</p>
+            </div>
           </div>
         </div>
         <div class="grid__item grid__item--bg theme-6">
@@ -211,7 +224,7 @@
               <a
                 class="grid__item-link"
                 href="#"
-                style="margin-top:90%;color:var(--color-main)"
+                style="margin-top:65%;color:var(--color-main)"
               >Discover more</a>
             </h3>
           </div>
@@ -219,8 +232,8 @@
       </div>
     </div>
     <div id="about-bottom">
-      <div id="about-bottom-left">你好</div>
-      <div id="about-bottom-right">再见</div>
+      <div id="about-bottom-left">📫&nbsp;&nbsp;meiziRain</div>
+      <div id="about-bottom-right">@gmail.com</div>
     </div>
   </div>
 </template>
@@ -234,6 +247,8 @@ import ScrollImg from "@/components/ScrollImg.vue";
 import CopyText from "@/components/CopyText.vue";
 import Carousel3D from "@/components/Carousel3D.vue";
 import { novacancy } from "@/assets/about/jquery.novacancy.js"; //注意路径
+
+//轮播图
 import Slick from "vue-slick";
 
 // hover.js  模糊效果： 个人将图片地址改为自定义属性传递，删除img标签
@@ -277,12 +292,6 @@ export default {
         gold: require("../assets/about/project/gold_cover.png"),
         gold4: require("../assets/about/project/gold4.png"),
         displacement1: require("../assets/about/project/displacement/1.jpg")
-      },
-      slickOptions: {
-        slidesToShow: 1,
-        arrows: false,
-        autoplay: true
-        // Any other options that can be got from plugin documentation
       }
     };
   },
@@ -393,20 +402,6 @@ export default {
         color: "Red",
         glow: ["0 0 80px Red", "0 0 30px FireBrick", "0 0 6px DarkRed"]
       });
-    },
-    next() {
-      this.$refs.slick.next();
-    },
-
-    prev() {
-      this.$refs.slick.prev();
-    },
-
-    reInit() {
-      // Helpful if you have to deal with v-for to update dynamic lists
-      this.$nextTick(() => {
-        this.$refs.slick.reSlick();
-      });
     }
   },
   beforeDestroy() {
@@ -498,16 +493,6 @@ video:focus {
   margin-top: 2%;
   margin-left: 30%;
 }
-.slickImg {
-  display: inline-block;
-  width: 250px;
-  height: 500px;
-  margin-right: 2%;
-  margin-top: 2%;
-}
-.slick-slide {
-  width: none !important;
-}
 #about {
   /* 内容大于屏幕即要这样？ */
   color: white;
@@ -559,6 +544,7 @@ video:focus {
 }
 .fa-github {
   font-size: 2.5em;
+  color: white;
 }
 .fa-github:hover {
   color: var(--color-main);
