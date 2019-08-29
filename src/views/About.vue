@@ -495,6 +495,7 @@ video:focus {
 }
 #about {
   /* 内容大于屏幕即要这样？ */
+
   color: white;
 }
 
