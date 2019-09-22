@@ -12,7 +12,7 @@ import Moonlight from "../components/Moonlight.vue";
 export default {
   name: "daily",
   components: {
-    Moonlight
+    Moonlight,
   }
 };
 </script>

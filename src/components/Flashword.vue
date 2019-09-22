@@ -99,16 +99,24 @@ export default {
   height: 20rem;
 }
 .content__title {
+    font-family: 'Cabin Sketch', cursive;
   height: 15rem;
   line-height: 15rem;
 }
 .content__subtitle {
+  font-family: 'Cabin Sketch', cursive;
   width: 100%;
   height: 4rem;
-  margin: auto;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  color: wheat;
+  font-size: 0.4em;
+}
+@media screen and (max-width: 600px) {
+  .content__subtitle {
+    font-size: 0.8em;
+  }
 }
 </style>

@@ -361,11 +361,6 @@ function init() {
 
         // Initialize the slideshow.
         const slideshow = new Slideshow(document.querySelector('.slideshow'));
-
-        // Preload all the images in the page.
-        imagesLoaded(document.querySelectorAll('.slide__figure-img'), {
-            background: true
-        }, () => document.body.classList.remove('loading'));
     }
 
 }

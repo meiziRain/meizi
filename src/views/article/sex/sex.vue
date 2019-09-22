@@ -2,17 +2,21 @@
 
 <template>
   <!-- https://github.com/codrops/ImageTrailEffects/ -->
-  <div id="sex">
-    <div class="sex-content" ref="content">
-      <img class="content__img" src="./imgs/pornhub-1.png" alt="Some image" />
-      <img class="content__img" src="./imgs/idea.jpg" alt="Some image" />
-      <img class="content__img" src="./imgs/PetiteAlexis-1.jpg" alt="Some image" />
-      <img class="content__img" src="./imgs/PetiteAlexis-2.jpg" alt="Some image" />
-      <img class="content__img" src="./imgs/PetiteAlexis-3.png" alt="Some image" />
-      <img class="content__img" src="./imgs/PetiteAlexis-8.jpg" alt="Some image" />
-      <h3 class="content__title">Some beautiful bodies</h3>
+  <div>
+    <!-- <router-view id="articles"></router-view> -->
+    <!-- blog中设置如上的id值会覆盖掉这个文件中template下的div 的id值 -->
+    <div id="sex">
+      <div class="sex-content" ref="content">
+        <img class="content__img" src="./imgs/pornhub-1.png" alt="Some image" />
+        <img class="content__img" src="./imgs/idea.jpg" alt="Some image" />
+        <img class="content__img" src="./imgs/PetiteAlexis-1.jpg" alt="Some image" />
+        <img class="content__img" src="./imgs/PetiteAlexis-2.jpg" alt="Some image" />
+        <img class="content__img" src="./imgs/PetiteAlexis-3.png" alt="Some image" />
+        <img class="content__img" src="./imgs/PetiteAlexis-8.jpg" alt="Some image" />
+        <h3 class="content__title">Some beautiful bodies</h3>
+      </div>
+      <!--/content-->
     </div>
-    <!--/content-->
   </div>
 </template>
 
@@ -24,8 +28,15 @@ export default {
   components: {},
   mounted() {
     this.initImg();
+    this.hideNav();
   },
   methods: {
+    hideNav() {
+      document.querySelector("#iris").style.visibility = "hidden";
+      document.querySelector("#hamburger").style.visibility = "visible";
+      document.querySelector(".hamburger").classList.add("is-opened-navi");
+    },
+
     initImg() {
       // body element
       const body = document.body;
@@ -241,6 +252,15 @@ export default {
   --img-maxwidth: 400px;
   --blendmode-title: difference;
   --filter-img: none;
+    animation: fadeIn 2s ease forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .sex-content {
   height: 300px;

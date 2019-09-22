@@ -30,7 +30,7 @@ export default {
   data() {
     return {
       currentindex: 0,
-      ways:["home","blog","studio","daily","about"],
+      ways: ["home", "blog", "studio", "daily", "about"],
       menu: [
         "sebastian",
         "prospero",
@@ -75,9 +75,9 @@ export default {
       console.log(me.$route.path);
       let path = me.$route.path;
       for (let i in this.ways) {
-        if (path.indexOf(this.ways[i])>-1) {
+        if (path.indexOf(this.ways[i]) > -1) {
           console.log(i);
-          this.currentindex=i;
+          this.currentindex = i;
         }
       }
     },
@@ -126,8 +126,9 @@ export default {
 <style scoped>
 /*----------------------------------------------- */
 /* Common styles for all menus */
-.menu {
-  line-height: 1;
+#menu {
+  font-family: "Poiret One", cursive;
+  font-size: 1.1em;
 }
 
 .menu__list {
@@ -1256,7 +1257,9 @@ export default {
 }
 
 /* Juno */
+
 .menu--juno .menu__item {
+  width: 6rem;
   position: relative;
   overflow: hidden;
   margin: 0.5em;
@@ -1265,7 +1268,6 @@ export default {
 .menu--juno .menu__link {
   position: relative;
   z-index: 10;
-  width: 4rem;
   text-align: center;
   color: #b5b5b5;
   -webkit-transition: color 0.3s;

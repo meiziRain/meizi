@@ -1,8 +1,6 @@
 <template>
   <div id="about">
-    <!-- <div id="slogan" @mouseover="mouseover()" @mouseout="mouseout()"></div> -->
     <div id="profile">
-      <!-- <div id="avatar"><img style="width:100%;height:100%;border-radius:50%" src="../assets/about/avatar.jpg" alt=""></div> -->
       <div style="height:18vh;"></div>
       <CircleHover id="circleHover"></CircleHover>
 
@@ -23,7 +21,7 @@
       >Front-end web development</div>
       <div>
         <div id="introduce" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">
-          <br />Will have a neon-style UI component library?
+          <br />A neon-style UI component library ?
         </div>
         <div
           id="down"
@@ -42,7 +40,7 @@
         </div>
       </div>
     </div>
-    <div id="project">
+    <div id="about-project">
       <div id="video-wrap" class="demo-4" ref="overlay">
         <div class="hamburger" @click="closeVideo" style="display:none;" ref="hamburger">
           <div class="hamburger__line hamburger__line--cross01">
@@ -112,10 +110,7 @@
             data-intensity="-0.65"
             data-speed-in="1.2"
             data-speed-out="1.2"
-          >
-            <!-- <img class="distortionImg" src="../assets/about/project/Img21.jpg" alt="Image" />
-            <img class="distortionImg" src="../assets/about/project/Img22.jpg" alt="Image" />-->
-          </div>
+          ></div>
           <!-- FIXME: 对于distortion.js有hover效果的必须添加 pointer-events: none; 不添加没有hover效果，添加后自定义的 <CopyText>又给屏蔽了。 -->
           <div class="grid__item-content" style="	pointer-events: none;">
             <span class="grid__item-meta">
@@ -157,11 +152,6 @@
         </div>
         <div class="grid__item theme-4" style="color:black;">
           <div class="grid__item-content">
-            <!-- <nav class="grid__item-nav">
-              <a href="#" class="grid__item-link">About</a>
-              <a href="#" class="grid__item-link">Blog</a>
-              <a href="#" class="grid__item-link">Membership</a>
-            </nav>-->
             <h2 class="grid__item-title grid__item-title--small">More accurate and faster</h2>
             <div
               data-aos="fade-up"
@@ -181,7 +171,6 @@
               <br />
               <li>降低人工成本。</li>
               <br />
-              <a href="#" class="grid__item-link">Read more</a>
             </div>
           </div>
         </div>
@@ -219,14 +208,7 @@
               <i class="fab fa-weixin" style="font-size: 2.5em;color:rgb(0, 173, 25);"></i>
             </span>
             <!-- <h2 class="grid__item-title">Build it forever</h2> -->
-            <h3 class="grid__item-subtitle">
-              <!-- <span>Sweden's famous furniture</span> -->
-              <a
-                class="grid__item-link"
-                href="#"
-                style="margin-top:65%;color:var(--color-main)"
-              >Discover more</a>
-            </h3>
+            <h3 class="grid__item-subtitle"></h3>
           </div>
         </div>
       </div>
@@ -381,18 +363,6 @@ export default {
       };
     },
     down() {},
-    mouseover() {
-      console.log("mouseover");
-      var sloganObj = document.getElementById("slogan");
-      sloganObj.style.animationName = "sloganMouseover";
-      sloganObj.style.animationDuration = "0.2s";
-    },
-    mouseout() {
-      console.log("mouseout");
-      var sloganObj = document.getElementById("slogan");
-      sloganObj.style.animationName = "sloganMouseout";
-      sloganObj.style.animationDuration = "0.5s";
-    },
     // css只能为每一个元素设置一个animation属性
 
     init() {
@@ -432,7 +402,7 @@ export default {
   top: 0px;
 }
 #video {
-  position: absolute;
+ position: absolute;
   width: 100vw;
   height: 100vh;
   /* 必须要加 */
@@ -529,10 +499,11 @@ video:focus {
   padding: 1.2em;
 }
 #introduce {
+      font-family: 'Cabin Sketch', cursive;
   word-break: break-word;
   line-height: 1.75;
-  font-weight: 600;
-  font-size: 1.1em;
+  /* font-weight: 600; */
+  font-size: 1.4em;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -556,49 +527,6 @@ video:focus {
   font-weight: 400;
   font-size: 1em;
   letter-spacing: 1px;
-}
-#slogan {
-  border: 1px solid red;
-  width: 15rem;
-  height: 20rem;
-  z-index: 2;
-  margin-left: 20rem;
-  position: relative;
-  margin-top: 4%;
-  background: url(../../public/demo.jpg);
-  animation: sloganInit 0.8s linear;
-  animation-fill-mode: forwards;
-  /* 设置对象状态为动画结束时的状态 */
-}
-@keyframes sloganInit {
-  0% {
-    margin-top: 4%;
-    opacity: 0;
-  }
-  50% {
-    margin-top: 6%;
-    opacity: 0.5;
-  }
-  100% {
-    margin-top: 8%;
-    opacity: 1;
-  }
-}
-@keyframes sloganMouseover {
-  0% {
-    margin-top: 8%;
-  }
-  100% {
-    margin-top: 4%;
-  }
-}
-@keyframes sloganMouseout {
-  0% {
-    margin-top: 4%;
-  }
-  100% {
-    margin-top: 8%;
-  }
 }
 
 @-webkit-keyframes pulse {
@@ -639,6 +567,9 @@ video:focus {
   #nickname {
     font-weight: 300;
     font-size: 3em;
+  }
+  #introduce {
+    font-size: 1.2em;
   }
 }
 @media screen and (max-width: 700px) {

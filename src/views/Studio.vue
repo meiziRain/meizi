@@ -1,8 +1,9 @@
 <template>
-  <div id="studio">
-<!-- <SocialLinkCube></SocialLinkCube> -->
-<!-- <Carousel></Carousel> -->
-<!-- <Carousel3D></Carousel3D> -->
+  <div id="studio" >
+    <!-- <SocialLinkCube></SocialLinkCube> -->
+    <!-- <Carousel></Carousel> -->
+    <!-- <Carousel3D></Carousel3D> -->
+    <test></test>
   </div>
 </template>
 
@@ -17,14 +18,22 @@ export default {
   components: {
     Star,
     Carousel,
-    Carousel3D,
+    Carousel3D
+  },
+  methods: {
+
   }
 };
 </script>
 
 <style scoped>
-#sociallinkcube{
-    overflow: hidden;
+#studio {
+  width: 100vw;
+  height: 100vh;
+}
+
+#sociallinkcube {
+  overflow: hidden;
 }
 canvas {
   position: fixed;

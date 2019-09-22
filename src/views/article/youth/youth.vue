@@ -25,19 +25,22 @@
           />
         </svg>
       </svg>
+
       <div>
         <p class="message">Please view on desktop to see the full layout</p>
         <div class="slideshow">
           <div class="slide slide--layout-1 slide--current">
             <div class="content">
+              <div class="bg-img bg-layout-1"></div>
               <div class="left">
-                <h1 class="h-center">《故乡遥》</h1>
-                <div class="baseFont layout-1-left">
-                  <div class="h-center">
+                <div class="baseFont">
+                  <div class="layout-1-left h-center">
                     我平平望去、
                     <br />不远处的洼地里灌进的水组成的形状，
                     <br />像极了一面面造型各异的镜子，
                     <br />阳光在上方，端详着自己的脸庞。
+                    <br />
+                    <br />
                     <br />
                     <br />青青嫩草覆盖在凸出的土堆上，
                     <br />几匹马儿在其上一本正经地吃着草，
@@ -45,14 +48,8 @@
                     <br />我也端坐着一眼不眨地看它。
                   </div>
                 </div>
-                <div class="layout-1-left-img h-divCenter">
-                  <img class="img" src="./img/1.jpeg" alt />
-                </div>
               </div>
               <div class="right">
-                <!-- <div class="layout-1-right-img">
-                <img class="img" src="./img/2.jpeg" alt />
-                </div>-->
                 <div class="baseFont">
                   <div class="layout-1-right-right h-center">
                     于是，一人一马就这样痴傻地对视着
@@ -78,13 +75,15 @@
           <div class="slide slide--layout-2">
             <div class="content">
               <div class="left">
-                <div class="layout-2-left-img">
-                  <img class="img" src="./img/3.jpeg" alt />
+                <div class="bg-img bg-layout-2-left">
+                  <!-- <img class="img" src="./img/3.jpeg" alt /> -->
                 </div>
                 <div class="baseFont">
                   <div class="layout-2-left h-center">
                     天上真实与水中倒影相映成趣
                     <br />一对太阳两片云
+                    <br />
+                    <br />
                     <br />
                     <br />山后佛寺的钟声，随风飘来
                     <br />“溶”入牧人唤牛时的吆喝
@@ -155,8 +154,8 @@
           <div class="slide slide--layout-4">
             <div class="content">
               <div class="left">
-                <div class="layout-4-left-img">
-                  <img class="img" src="./img/7.jpeg" alt />
+                <div class="bg-img bg-layout-4-left">
+                  <!-- <img class="img" src="./img/7.jpeg" alt /> -->
                 </div>
 
                 <div class="baseFont">
@@ -183,9 +182,6 @@
                     <br />拆开夹带的零食水果品尝起来。
                     <br />我居高临下
                     <br />“看得见这广阔的天地，但这广阔的天地却看不见我。”
-                    <br />
-                    <br />紫意从她消逝的地方浮现，蚕食了仅存的一片红晕，
-                    <br />这片红晕渐渐斑驳，像是燃尽的篝火。
                   </div>
                 </div>
               </div>
@@ -201,6 +197,8 @@
                 </div>
                 <div class="baseFont">
                   <div class="layout-5-left h-center">
+                    <br />紫意从她消逝的地方浮现，蚕食了仅存的一片红晕，
+                    <br />这片红晕渐渐斑驳，像是燃尽的篝火。
                     <br />整个世界都成了紫色，几只水鸭相互戏逐，
                     <br />把紫色的天空带起层层细浪。
                     <br />
@@ -228,6 +226,7 @@
           </div>
           <div class="slide slide--layout-6">
             <div class="content">
+              <div class="bg-img bg-layout-6"></div>
               <div class="left"></div>
               <div class="right"></div>
             </div>
@@ -255,7 +254,7 @@
           <!-- navigation -->
           <nav class="nav">
             <button class="nav__button">
-              <span class="nav__button-text">index</span>
+              <span class="nav__button-text">目录</span>
             </button>
             <h2 class="nav__chapter"></h2>
             <div class="toc">
@@ -280,8 +279,8 @@
                 <span class="toc__item-title">倦</span>
               </a>
               <a class="toc__item" href="#entry-6">
-                <span class="toc__item-page">011.</span>
-                <span class="toc__item-title">123</span>
+                <span class="toc__item-page">11.</span>
+                <span class="toc__item-title">念</span>
               </a>
             </div>
           </nav>
@@ -306,6 +305,14 @@ export default {
   },
   mounted() {
     init();
+    this.hideNav();
+  },
+  methods: {
+    hideNav() {
+      document.querySelector("#iris").style.visibility = "hidden";
+      document.querySelector("#hamburger").style.visibility = "visible";
+      document.querySelector(".hamburger").classList.add("is-opened-navi");
+    }
   }
 };
 </script>
@@ -313,32 +320,81 @@ export default {
 <style scoped>
 @import "base.css";
 #youth {
-  z-index: 99;
+  position: fixed;
   width: 100vw;
   height: 100vh;
+  z-index: 99;
+  animation: fadeIn 1s ease forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#hamburger {
+  position: fixed;
+  z-index: 99;
 }
 .slide {
   font-family: 楷体;
+}
+.slideshow {
+  z-index: 9999 !important;
 }
 .img {
   width: 100%;
   height: 100%;
 }
-.layout-1-left-img {
-  width: 70%;
-  height: 35%;
+.bg-img {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover !important;
+  filter: grayscale(50%) opacity(25%);
+}
+.bg-layout-1 {
+  background-image: url(./img/1.jpeg);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+}
+.bg-layout-2-left {
+  background-image: url(./img/3.jpeg);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  right: 0;
+}
+.bg-layout-4-left {
+  background-image: url(./img/7.jpeg);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  filter: grayscale(10%) opacity(60%);
+}
+.bg-layout-6{
+    background-image: url(./img/7.jpeg);
+}
+.layout-1-left {
+  width: 100%;
+  height: 100%;
+  margin-top: 12%;
 }
 .layout-1-right-img {
   margin-top: 10%;
   width: 56%;
   height: 40%;
   margin-left: 2%;
-}
-.layout-2-left-img {
-  width: 49%;
-  height: 70%;
-  margin-top: 10%;
-  margin-left: 5%;
 }
 .layout-2-right-img {
   width: 49%;
@@ -348,16 +404,16 @@ export default {
   margin-right: 5%;
 }
 .layout-3-left-img {
-  width: 57%;
-  height: 100%;
+  width: 47%;
+  height: 80%;
   margin-left: auto;
   margin-right: auto;
   margin-top: -10%;
   transform: rotate(90deg);
 }
 .layout-3-right-img {
-  width: 57%;
-  height: 100%;
+  width: 47%;
+  height: 80%;
   margin-left: auto;
   margin-right: auto;
   margin-top: -10%;
@@ -385,15 +441,17 @@ export default {
   margin-left: auto;
   margin-right: auto;
 }
+#article_title {
+  font-size: 1.5em;
+}
 .h-center {
   text-align: center;
 }
 .baseFont {
   padding: 2rem;
   word-break: break-word;
-  line-height: 1.75;
-  font-weight: 400;
-  font-size: 1.3em;
+  line-height: 1.6;
+  font-size: 1.1em;
 }
 .layout-1-right-bottom {
   margin-top: 5%;
@@ -406,10 +464,9 @@ export default {
   margin-left: auto;
 }
 .layout-2-left {
-  width: 40%;
-  height: 40%;
-  margin-left: 60%;
-  margin-top: -50%;
+  width: 100%;
+  height: 100%;
+  margin-top: 12%;
 }
 .layout-2-right {
   width: 40%;
@@ -417,14 +474,14 @@ export default {
   margin-top: 10%;
 }
 .layout-3-left {
-  width: 80%;
+  width: 100%;
   height: 30%;
-  margin-top: -20%;
+  margin-top: -18%;
   margin-left: auto;
   margin-right: auto;
 }
 .layout-4-left {
-  width: 80%;
+  width: 100%;
   height: 40%;
   margin-right: auto;
   margin-left: auto;
@@ -437,7 +494,7 @@ export default {
   margin-left: auto;
 }
 .layout-5-left {
-  width: 80%;
+  width: 100%;
   height: 40%;
   margin-right: auto;
   margin-left: auto;
@@ -458,18 +515,18 @@ export default {
 }
 .content {
   /* 可能需要固定高宽 */
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 100%;
   height: 100%;
 }
 .left {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 100%;
   width: 49%;
   float: left;
 }
 .right {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 100%;
   width: 49%;
   float: right;

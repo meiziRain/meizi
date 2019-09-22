@@ -7,7 +7,8 @@ import 'nprogress/nprogress.css'
 // import ElementUI from 'element-ui'
 // import 'element-ui/lib/theme-chalk/index.css'
 // Vue.use(ElementUI);
-import test from 'meizi-ui'
+import meizi from 'meizi-ui'
+Vue.use(meizi)
 import 'font-awesome/css/font-awesome.css'
 
 import animated from 'animate.css' 
@@ -28,7 +29,7 @@ Vue.prototype.clipboard = clipboard;
 
 
 import $ from 'jquery'
-Vue.use(test)
+
 
 Vue.config.productionTip = false
 

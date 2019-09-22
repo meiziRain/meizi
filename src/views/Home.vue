@@ -67,11 +67,14 @@ export default {
 #home {
   /* position: relative;
   z-index: 1;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+
+
   margin: 0; */
+    width: 100vw;
+  height: 100vh;
   animation: fade 1s ease forwards;
+    overflow: hidden;
+      margin: 0;
 }
 #word {
   position: absolute;
@@ -135,6 +138,12 @@ export default {
 }
 #logo :hover {
   transform: scale(1.3);
+}
+@media screen and (max-width: 400px) {
+  #logo {
+    width: 3rem;
+    height: 3rem;
+  }
 }
 </style>
 

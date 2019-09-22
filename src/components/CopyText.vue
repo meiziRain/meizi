@@ -69,4 +69,7 @@ export default {
   color: var(--color-main);;
   cursor: pointer;
 }
+.text:focus{
+  outline: none;
+}
 </style>

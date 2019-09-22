@@ -128,7 +128,7 @@
   display: block;
 }
 
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content {
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content {
   position: relative;
   display: block;
   height: 75vh;
@@ -144,7 +144,7 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.14);
 }
 
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content:before {
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content:before {
   content: "";
   display: block;
   background: linear-gradient(180deg, rgba(86, 97, 107, 0) 0%, rgba(32, 51, 69, 0.85) 100%);
@@ -156,7 +156,7 @@
   bottom: -1px;
 }
 
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content .number {
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content .number {
   position: absolute;
   top: 2em;
   left: 2em;
@@ -164,14 +164,14 @@
   color: #ffffff;
 }
 
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content .number,
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content .number:before,
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content .number:after {
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content .number,
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content .number:before,
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content .number:after {
   vertical-align: middle;
 }
 
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content .number:before,
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content .number:after {
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content .number:before,
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content .number:after {
   display: inline-block;
   content: "";
   height: 0.133em;
@@ -179,17 +179,17 @@
   background: white;
 }
 
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content .number:before {
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content .number:before {
   width: 0;
   margin-left: 0;
 }
 
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content .number:after {
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content .number:after {
   width: 3em;
   margin-left: 1em;
 }
 
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content .body {
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content .body {
   position: absolute;
   bottom: 2em;
   left: 2em;
@@ -197,36 +197,36 @@
   color: #ffffff;
 }
 
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content .location,
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content .headline {
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content .location,
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content .headline {
   position: relative;
   bottom: 0;
   cursor: default;
   color: #ffffff;
 }
 
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content:before,
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content .number:before,
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content .number:after,
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content .location,
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content .headline,
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content .link {
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content:before,
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content .number:before,
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content .number:after,
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content .location,
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content .headline,
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content .link {
   transition: 375ms ease-in-out;
 }
 
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content .location {
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content .location {
   font-weight: 100;
   margin-bottom: 1.5em;
   transition-delay: 60ms;
 }
 
 @media screen and (max-width: 992px) {
-  .carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content .location {
+  .carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content .location {
     font-size: 0.8em;
   }
 }
 
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content .headline {
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content .headline {
   font-family: "Abril Fatface", cursive;
   font-size: 2.867em;
   transition-delay: 50ms;
@@ -235,12 +235,12 @@
 }
 
 @media screen and (max-width: 992px) {
-  .carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content .headline {
+  .carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content .headline {
     font-size: 1.8em;
   }
 }
 
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content .link {
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content .link {
   display: inline-block;
   /* border:2px solid #3498db; */
 
@@ -257,7 +257,7 @@
   cursor: pointer;
 }
 
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content .link:hover {
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content .link:hover {
   transform: scale(1.1);
   border: 3px solid #ffffff;
   background: #222222;
@@ -265,63 +265,63 @@
 
 
 @media screen and (max-width: 992px) {
-  .carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content .link {
+  .carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content .link {
     font-size: 0.8em;
   }
 }
 
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content.hover:before,
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content:hover:before,
-.carousel .slider-nav .slick-list .slick-track .slick-slide.slick-current div .nav-item .content:before {
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content.hover:before,
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content:hover:before,
+.carousel .slider-nav .slick-list .slick-track .slick-slide.slick-current div .nav-item .slide-content:before {
   opacity: 1;
 }
 
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content.hover:before,
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content.hover .number:before,
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content.hover .number:after,
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content.hover .location,
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content.hover .headline,
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content.hover .link,
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content:hover:before,
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content:hover .number:before,
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content:hover .number:after,
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content:hover .location,
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content:hover .headline,
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content:hover .link {
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content.hover:before,
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content.hover .number:before,
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content.hover .number:after,
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content.hover .location,
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content.hover .headline,
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content.hover .link,
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content:hover:before,
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content:hover .number:before,
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content:hover .number:after,
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content:hover .location,
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content:hover .headline,
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content:hover .link {
   transition: 500ms ease-in-out;
 }
 
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content.hover .number:before,
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content:hover .number:before,
-.carousel .slider-nav .slick-list .slick-track .slick-slide.slick-current div .nav-item .content .number:before {
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content.hover .number:before,
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content:hover .number:before,
+.carousel .slider-nav .slick-list .slick-track .slick-slide.slick-current div .nav-item .slide-content .number:before {
   width: 3em;
   margin-right: 1em;
 }
 
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content.hover .number:after,
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content:hover .number:after,
-.carousel .slider-nav .slick-list .slick-track .slick-slide.slick-current div .nav-item .content .number:after {
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content.hover .number:after,
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content:hover .number:after,
+.carousel .slider-nav .slick-list .slick-track .slick-slide.slick-current div .nav-item .slide-content .number:after {
   width: 0;
   margin-right: 0;
 }
 
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content.hover .location,
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content:hover .location,
-.carousel .slider-nav .slick-list .slick-track .slick-slide.slick-current div .nav-item .content .location {
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content.hover .location,
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content:hover .location,
+.carousel .slider-nav .slick-list .slick-track .slick-slide.slick-current div .nav-item .slide-content .location {
   transition-delay: 0;
   bottom: 4em;
 }
 
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content.hover .headline,
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content:hover .headline,
-.carousel .slider-nav .slick-list .slick-track .slick-slide.slick-current div .nav-item .content .headline {
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content.hover .headline,
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content:hover .headline,
+.carousel .slider-nav .slick-list .slick-track .slick-slide.slick-current div .nav-item .slide-content .headline {
   transition-delay: 100ms;
   bottom: 1.5em;
 }
 
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content.hover .link,
-.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .content:hover .link,
-.carousel .slider-nav .slick-list .slick-track .slick-slide.slick-current div .nav-item .content .link {
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content.hover .link,
+.carousel .slider-nav .slick-list .slick-track .slick-slide div .nav-item .slide-content:hover .link,
+.carousel .slider-nav .slick-list .slick-track .slick-slide.slick-current div .nav-item .slide-content .link {
   bottom: 0;
   opacity: 1;
   transition-delay: 250ms;

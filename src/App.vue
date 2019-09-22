@@ -6,12 +6,14 @@
     <Loading v-if="loading" id="loading"></Loading>
 
     <div id="content">
+      
       <!-- <router-link :class="{selected: 1==currentindex}" to="/blog" @click.native="toBlog">Blog</router-link>
       <router-link :class="{selected: 2==currentindex}" to="/studio" @click.native="toStudio">Studio</router-link>
       <router-link :class="{selected: 3==currentindex}" to="/daily" @click.native="toDaily">Daily</router-link>
       <router-link :class="{selected: 4==currentindex}" to="/about" @click.native="toAbout">About</router-link>-->
       <Iris v-if="!$store.state.isMobile" ref="nav" id="iris"></Iris>
       <Neonmenu id="neonmenu" v-else></Neonmenu>
+      <Hamburger id="hamburger" style="visibility:hidden"></Hamburger>
       <router-view />
       <!-- 是一个顶级的外链，它会渲染和顶级路由匹配的组件。 -->
       <!--用于预加载 font-awesome的图标 -->
@@ -30,15 +32,16 @@
 import Logo from "./components/Logo.vue";
 import Iris from "./components/Iris.vue";
 import Neonmenu from "@/components/Neonmenu.vue";
-
 import Loading from "./components/Loading.vue";
+import Hamburger from "./components/Hamburger.vue";
 export default {
   name: "home",
   components: {
     Logo,
     Iris,
     Loading,
-    Neonmenu
+    Neonmenu,
+    Hamburger
   },
   data() {
     return {
@@ -140,6 +143,9 @@ export default {
 };
 </script>
 <style>
+#hamburger{
+  transform: scale(0.6);
+}
 #app {
   background-color: rgb(15, 14, 14);
 }
@@ -197,7 +203,7 @@ export default {
 
 #iris {
   position: fixed;
-  z-index: 999;
+  z-index: 1;
   right: 2%;
   top: 4%;
 }
