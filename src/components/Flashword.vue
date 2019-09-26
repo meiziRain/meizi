@@ -115,6 +115,9 @@ export default {
   font-size: 0.4em;
 }
 @media screen and (max-width: 600px) {
+  .content__title{
+    font-size: 4em;
+  }
   .content__subtitle {
     font-size: 0.8em;
   }

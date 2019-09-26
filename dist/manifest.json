@@ -1,0 +1,23 @@
+{
+  "dir": "ltr",
+  "lang": "en",
+  "name": "Meizi",
+  "scope": "/",
+  "display": "standalone",
+  "start_url": "/",
+  "short_name": "Meizi",
+  "description": "It is about me. - Meizi",
+  "orientation": "any",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "icons": [{
+    "src": "favicon.png",
+    "sizes": "32x32",
+    "type": "image/png"
+  }, {
+    "src": "favicon.png",
+    "sizes": "48x48",
+    "type": "image/png"
+  } 
+  ]
+}

@@ -18,7 +18,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="assets/slick.css" />
-
+    <link rel="manifest" href="pwa.webmanifest" />
     <!-- font-awesome字体图标库 -->
 
     <!-- 为什么手机会弹出这段话 -->
@@ -106,13 +106,25 @@
       a:focus {
         outline: none;
       }
+
+      /* 修改gitter的打开按钮默认背景颜色 */
+      .gitter-open-chat-button {
+        background-color: var(--color-main);
+      }
+      .gitter-open-chat-button:hover {
+        background-color: var(--color-main);
+      }
     </style>
     <script>
       ((window.gitter = {}).chat = {}).options = {
-        room: 'meizi'
+        room: "meiziRain-github-io/community"
       };
     </script>
-    <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+    <script
+      src="https://sidecar.gitter.im/dist/sidecar.v1.js"
+      async
+      defer
+    ></script>
     <script type="text/javascript" src="assets/fontawesome.js"></script>
     <script type="text/javascript" src="assets/three.min.js"></script>
     <script type="text/javascript" src="assets/Detector.js"></script>
@@ -378,6 +390,20 @@
           float fogFactor = smoothstep( fogNear, fogFar, fogDepth );
           gl_FragColor.rgb = mix( gl_FragColor.rgb, fogColor, fogFactor );
         #endif
+      }
+    </script>
+    <script type="text/javascript">
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("/sw.js", { scope: "/" })
+          .then(function(reg) {
+            // registration worked
+            console.log("Registration succeeded. Scope is " + reg.scope);
+          })
+          .catch(function(error) {
+            // registration failed
+            console.log("Registration failed with " + error);
+          });
       }
     </script>
     <script type="text/javascript">

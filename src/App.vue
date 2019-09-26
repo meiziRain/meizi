@@ -1,12 +1,11 @@
 <template>
   <div id="app" ref="app">
     <!-- 预加载博客每日图 -->
-    <div v-show="false" id="toLoadImg"></div>
 
+    <div v-show="false" id="toLoadImg"></div>
     <Loading v-if="loading" id="loading"></Loading>
 
     <div id="content">
-      
       <!-- <router-link :class="{selected: 1==currentindex}" to="/blog" @click.native="toBlog">Blog</router-link>
       <router-link :class="{selected: 2==currentindex}" to="/studio" @click.native="toStudio">Studio</router-link>
       <router-link :class="{selected: 3==currentindex}" to="/daily" @click.native="toDaily">Daily</router-link>
@@ -74,7 +73,6 @@ export default {
   mounted() {
     // this.notify();
     // ref属性的使用不能放在 v-if v-else中，使用了v-if 后，将不会渲染子组件内容，导致this.$refs获取不到对应的名称
-    this.$refs.nav.keepNavRender();
 
     //dom生成后
     // Preload images
@@ -101,8 +99,28 @@ export default {
     // Promise.all([preloadImg()]).then(() => {
     //   this.loading = false;
     // });
+
+    if (this.$store.state.isMobile) {
+      this.handleChatBtn();
+    } else {
+      this.$refs.nav.keepNavRender();
+    }
   },
   methods: {
+    handleChatBtn() {
+      let nav = document.querySelector("#neonmenu");
+      document
+        .querySelector(".gitter-open-chat-button")
+        .addEventListener("click", () => {
+          nav.style.transform = "translateY(400%)";
+        });
+      document
+        .querySelector(".gitter-chat-embed-action-bar-item-collapse-chat")
+        .addEventListener("click", () => {
+          nav.style.transform = "";
+        });
+    },
+
     notify() {
       Notification.requestPermission(prem => {
         prem == "granted"; // 同意
@@ -143,7 +161,7 @@ export default {
 };
 </script>
 <style>
-#hamburger{
+#hamburger {
   transform: scale(0.6);
 }
 #app {
