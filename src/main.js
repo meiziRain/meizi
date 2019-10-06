@@ -17,7 +17,7 @@ import 'balloon-css';
 
 
 //css-doodle 背景
-import  'css-doodle';
+// import  'css-doodle';
 
 //移动了位置
 import App from './App.vue'

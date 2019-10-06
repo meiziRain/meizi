@@ -4,7 +4,7 @@
 
     <div v-show="false" id="toLoadImg"></div>
     <Loading v-if="loading" id="loading"></Loading>
-
+    
     <div id="content">
       <!-- <router-link :class="{selected: 1==currentindex}" to="/blog" @click.native="toBlog">Blog</router-link>
       <router-link :class="{selected: 2==currentindex}" to="/studio" @click.native="toStudio">Studio</router-link>
@@ -102,9 +102,13 @@ export default {
 
     if (this.$store.state.isMobile) {
       this.handleChatBtn();
+
+      
     } else {
       this.$refs.nav.keepNavRender();
     }
+
+
   },
   methods: {
     handleChatBtn() {
@@ -161,6 +165,11 @@ export default {
 };
 </script>
 <style>
+.add-button {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
 #hamburger {
   transform: scale(0.6);
 }

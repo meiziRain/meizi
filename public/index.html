@@ -116,6 +116,7 @@
       }
     </style>
     <script>
+      //gitter web聊天
       ((window.gitter = {}).chat = {}).options = {
         room: "meiziRain-github-io/community"
       };
@@ -392,7 +393,7 @@
         #endif
       }
     </script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker
           .register("/sw.js", { scope: "/" })
@@ -405,7 +406,8 @@
             console.log("Registration failed with " + error);
           });
       }
-    </script>
+      
+    </script> -->
     <script type="text/javascript">
       function doNothing() {
         window.event.returnValue = false;
@@ -418,7 +420,10 @@
     <script src="assets/mo.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+    <button class="add-button">Add to home screen</button>
     <div id="app"></div>
+    
     <!-- built files will be auto injected -->
+  
   </body>
 </html>
