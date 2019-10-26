@@ -227,11 +227,157 @@
           <div class="slide slide--layout-6">
             <div class="content">
               <div class="bg-img bg-layout-6"></div>
-              <div class="left"></div>
-              <div class="right"></div>
+              <div class="left">
+                <div class="baseFont">
+                  <div class="layout-5-right h-center">
+                    <br />这暝色的时空随着远方逐渐亮起的灯火无限延伸出去
+                    <br />
+                    <br />足以让灵魂恣意放纵
+                    <br />
+                    <br />为何又让我无所适从？
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <div class="baseFont">
+                  <div class="layout-5-right h-center">
+                    <br />当我再次回到自己身体时
+                    <br />周围已经完全暗下来了
+                    <br />感受着自己的每一处
+                    <br />与之前并无不同
+                    <br />
+                    <br />她真的走的无声无息
+                    <br />什么都没有留下
+                  </div>
+                </div>
+              </div>
             </div>
             <span class="slide__number slide__number--left">11</span>
             <span class="slide__number slide__number--right">12</span>
+          </div>
+          <div class="slide slide--layout-7">
+            <div class="content">
+              <div class="bg-img bg-layout-7"></div>
+              <div class="left">
+                <div class="baseFont">
+                  <div class="layout-5-right h-center">
+                    <br />月亮渐渐升高
+                    <br />城市娇娆的霓虹开始融入月色中去
+                    <br />那边乐声嘈杂，多少往事在那儿喧嚣？
+                    <br />我回头望了一眼月光下的竹林......
+                    <br />
+                    <br />夜风茫然地在山里游荡
+                    <br />远处江心渔船上的一盏孤灯幽幽地发散着冷冽的光
+                    <br />——固执，昏暗，单调，漠然。
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <div class="baseFont">
+                  <div class="layout-5-right h-center">
+                    <br />这无边的夜幕
+                    <br />不知是裹挟着我
+                    <br />还是裹挟着那世间之物
+                    <br />
+                    <br />
+                    <br />此处万籁俱静。
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="slide__number slide__number--left">13</span>
+            <span class="slide__number slide__number--right">14</span>
+          </div>
+          <div class="slide slide--layout-8">
+            <div class="content">
+              <div class="bg-img bg-layout-8"></div>
+              <div class="left">
+                <div class="baseFont">
+                  <div class="layout-5-right h-center" style="color:white">
+                    <br />故乡河的水载着现在离去
+                    <br />才过不久，过了不久，又过不久。
+                    <br />月光开始变得温和起来，
+                    <br />凉如雨的夜色，温柔地抚摸着我。
+                    <br />渐渐地，我感觉自己身上的枷锁被这双灵巧工丽的手解开了，
+                    <br />我独卧江上，与清风徐眠。
+                    <br />
+                    <br />
+                    <br />皎月高悬，
+                    <br />黑色苍穹底下的万物都如发散着淡淡荧光，
+                    <br />遮盖了那盏孤独的灯。
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <div class="baseFont" style="transform:translateY(50%);">
+                  <div class="h-center" style="color:white">
+                    <br />在月华漫天之时，我沉沉睡去。
+                    <br />
+                    <br />鼓气与叹息，往复不止。
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="slide__number slide__number--left">15</span>
+            <span class="slide__number slide__number--right">16</span>
+          </div>
+          <div class="slide slide--layout-9">
+            <div class="content">
+              <div class="bg-img bg-layout-9"></div>
+              <div class="left">
+                <div class="baseFont">
+                  <div class="h-center" style="color:white;margin-top:20%;">
+                    醒转朝东望，
+                    <br />熹微出晨光。
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <div class="baseFont">
+                  <div class="h-center" style="color:white"></div>
+                </div>
+              </div>
+            </div>
+            <span class="slide__number slide__number--left">17</span>
+            <span class="slide__number slide__number--right">18</span>
+          </div>
+          <div class="slide slide--layout-10">
+            <div class="content">
+              <div class="bg-img bg-layout-10"></div>
+              <div class="left">
+                <div class="baseFont">
+                  <div class="layout-5-right h-center" style="color:white">
+                    <br />我决定不再停留，于是离开了这片林子，
+                    <br />歪歪扭扭的绕下山去，收好白搭的帐篷，
+                    <br />慢慢摇桨离开了这里。
+                    <br />
+                    <br />沿江几里后，水莫名的变得浑浊起来，
+                    <br />像是装了太多的心事。
+                    <br />
+                    <br />我伏在船舷上，失神地看着身遭的光润流动，
+                    <br />我仿佛听到了河水的心跳，
+                    <br />若那时断时续的敲桨声。
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <div class="baseFont" >
+                  <div class="h-center" style="color:white">
+                    <br />我突然明白在我昏沉的那段时间里，
+                    <br />她做了什么
+                    <br />——“她将自己的暗影投入我心，
+                    <br />又将我影投入身后这深深的竹林。”
+                    <br />想通后，我并没有回头。
+                    <br />因为此时，远山的那边，
+                    <br />升起了一颗新的太阳。
+                    <br />
+                    <br />船儿摇晃，此去前方。
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="slide__number slide__number--left">19</span>
+            <span class="slide__number slide__number--right">20</span>
           </div>
           <!-- revealer -->
           <div class="revealer">
@@ -281,6 +427,22 @@
               <a class="toc__item" href="#entry-6">
                 <span class="toc__item-page">11.</span>
                 <span class="toc__item-title">念</span>
+              </a>
+              <a class="toc__item" href="#entry-6">
+                <span class="toc__item-page">13.</span>
+                <span class="toc__item-title">暗</span>
+              </a>
+              <a class="toc__item" href="#entry-6">
+                <span class="toc__item-page">15.</span>
+                <span class="toc__item-title">散</span>
+              </a>
+              <a class="toc__item" href="#entry-6">
+                <span class="toc__item-page">17.</span>
+                <span class="toc__item-title">转</span>
+              </a>
+              <a class="toc__item" href="#entry-6">
+                <span class="toc__item-page">19.</span>
+                <span class="toc__item-title">船</span>
               </a>
             </div>
           </nav>
@@ -382,8 +544,55 @@ export default {
   right: 0;
   filter: grayscale(10%) opacity(60%);
 }
-.bg-layout-6{
-    background-image: url(./img/7.jpeg);
+.bg-layout-6 {
+  background-image: url(./img/dark.jpg);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  filter: grayscale(10%) opacity(60%);
+}
+.bg-layout-7 {
+  background-image: url(./img/moon.jpg);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  filter: opacity(80%);
+}
+.bg-layout-8 {
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  filter: opacity(100%);
+}
+.bg-layout-9 {
+  background-image: url(./img/14.jpeg);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  filter: opacity(100%);
+}
+.bg-layout-10 {
+  background-image: url(./img/17.jpeg);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  filter: opacity(100%);
 }
 .layout-1-left {
   width: 100%;
@@ -502,7 +711,7 @@ export default {
 .layout-5-right {
   width: 100%;
   height: 80%;
-  margin-top: 15%;
+  margin-top: 25%;
   margin-right: auto;
   margin-left: auto;
 }
