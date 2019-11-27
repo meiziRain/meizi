@@ -402,7 +402,7 @@ export default {
   top: 0px;
 }
 #video {
- position: absolute;
+  position: absolute;
   width: 100vw;
   height: 100vh;
   /* 必须要加 */
@@ -499,7 +499,7 @@ video:focus {
   padding: 1.2em;
 }
 #introduce {
-      font-family: 'Cabin Sketch', cursive;
+  font-family: "Cabin Sketch", cursive;
   word-break: break-word;
   line-height: 1.75;
   /* font-weight: 600; */
