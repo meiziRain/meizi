@@ -21,7 +21,7 @@
     "hover-effect": "^1.1.0",
     "jquery": "^3.4.1",
     "lax.js": "^1.2.3",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "meizi-ui": "^0.1.2",
     "nprogress": "^0.2.0",
     "three": "^0.104.0",
